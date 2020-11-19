@@ -1,0 +1,128 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body
+{
+
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+/* MODIFICAR EL NOMBRE DE LA PAGINA */
+h1
+{
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+
+.logo
+{
+    width: 110px;
+    height: 110px;
+    margin: 5px;
+    margin-left: 50px;
+}
+
+.barraBusqueda
+{
+    margin-right: 65px;
+    padding-bottom: 5px;
+}
+
+
+nav
+{
+    display: block;
+    margin-bottom: -10px;
+    margin-top: -15px;
+    padding-left: 50px;
+    min-width: 600px;
+}
+.navbar{
+    margin: 0px;
+    padding:0px;
+}
+.sticky-top
+{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 1030;
+}
+.nav-item
+{
+    display: block;
+    float: right;
+    margin-top:10px;
+    font-size: 17.5px;
+}
+.nav-link:hover
+{
+    background: #edc72e; 
+    border-radius: 4px;
+}
+.dropdown-menu
+{
+    background: transparent;
+    background:rgba(255, 255, 255, .6)
+}
+.dropdown-item:hover
+{
+    background: #edc72e;
+}
+.form-control
+{
+    border: 1px solid black    
+}
+.btn
+{
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.btn:hover
+{
+    /*background:rgba(64, 224, 208, .5);*/
+    background: #edc72e;
+
+}
+
+/*.paralelogramo 
+{
+    padding-bottom:10px;
+    background: #edc72e;
+    padding-right: 10px;
+    margin-right: 4px;
+    padding-left: 10px; 
+    border-radius: 4px;
+}*/
+
+
+.container-fluid
+{
+    height: 10px;
+    background: #000;
+}
+
+.carousel-item
+{
+    max-height: 525px;
+    overflow: hidden;
+}
+/* .carousel-control-prev , .carousel-control-next
+{
+
+} */
+
+

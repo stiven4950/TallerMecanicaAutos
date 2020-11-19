@@ -1,0 +1,489 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+}
+/*----------------------MODAL--------------------------*/
+
+.modal-body form button
+{
+  display: block;
+  margin: 2px auto;
+  background-color: rgba(48,51,107,.7)!important;
+  color: white;
+}
+.modal-body form button:hover
+{
+  background-color: rgba(48,51,107,1) !important;
+}
+.input-contenedor
+{
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 5px 2px;
+}
+.modal-body input[type="text"],.modal-body input[type="password"], .modal-body input[type="email"], .modal-body input[type="tel"], select
+{
+  margin-bottom: 0px !important;
+  outline: 0 !important;
+  border: none !important;
+  margin-left: -20px !important;
+  background-color: transparent;
+  width: 100%;
+  font-style: italic;
+}
+.input-contenedor:focus-within {
+    border: 1px solid #edc72e;
+}
+.icon
+{
+  display: block;
+  font-size: 1.3em;
+  margin-top: 5px;
+  width: 100%;
+  text-align: center;
+  color: #999;
+}
+.modal-body form p
+{
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.modal 
+{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vh;
+  overflow: scroll !important;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content
+{
+  margin: 10% auto;
+  width: 45% !important;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-header {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom: none !important;
+}
+.title
+{
+    display: block;
+    margin-left: 45px;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #999;
+    text-shadow: 1px 2px 2px rgba(237, 199,46, 1);
+}
+
+.modal-footer {
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: none !important;
+}
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
+
+.close:hover,
+.close:focus {
+  color: red !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.guardarBtn
+{
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  width: 100%;
+  font-size: 1.3em;
+  background-color: rgba(237, 199,46, .8);
+}
+
+.guardarBtn:hover, .guardarBtn:focus
+{
+  background: #edc72e;
+}
+
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*-----------------------------------------------------------------*/
+/* ANIMACION DE CARGA */
+#preloader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #0d0d0d;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000; }
+
+#original-load {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: #f1f1f1;
+  -webkit-animation: original 2400ms linear infinite;
+  animation: original 2400ms linear infinite;
+  z-index: 999; }
+  #original-load:before {
+    content: "";
+    position: absolute;
+    top: 7.5px;
+    left: 7.5px;
+    right: 7.5px;
+    bottom: 7.5px;
+    border-radius: 50%;
+    border: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #f1f1f1;
+    -webkit-animation: original 2700ms linear infinite;
+    animation: original 2700ms linear infinite; }
+  #original-load:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    border: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #f1f1f1;
+    -webkit-animation: original 1800ms linear infinite;
+    animation: original 1800ms linear infinite; }
+
+body{
+    background: #fff;
+}
+
+header{
+    width:100%;
+    background: #504e4f;
+    border-bottom: 4px solid #000;
+    max-height: 105px;
+    transition:all 500ms ease;
+}
+.wrapper
+{
+    width:90%;  
+    margin:auto;
+    overflow: hidden;
+    z-index: 1;
+}
+header .logo
+{
+    float:left;
+}
+.cols
+{
+    display: block;
+    float: left;
+    max-height: 150px;
+}
+.cols img, .img-logo-footer
+{
+    width: 140px;
+    height: 90px;
+    display: block;
+    margin-bottom:10px;
+}
+.cols h1
+{
+    display: block;
+    margin-top: 35px;
+    margin-left: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+header .logo a
+{
+    text-decoration: none;
+    color: black;
+}
+header nav
+{
+    float: right;
+    display: block;
+    margin-top: 30px;
+    font-family: 'Oswald', sans-serif;
+    margin-right: 10px !important;
+}
+header nav a
+{
+    display:inline-block;
+    color: #fff !important;
+    text-decoration: none;
+    padding:10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition:all 500ms ease;
+}
+.Blogin
+{
+    background: rgba(255, 227, 70, 0.8);
+    border-radius: 20px;
+}
+header nav a:hover
+{
+    background: #edc72e;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.dropdown-toggle
+{
+    font-weight: bold !important;
+    padding:10px 20px !important;
+    font-size: 18px !important;
+    margin-bottom: 4px;
+    transition:all 500ms ease !important;
+}
+
+.dropdown-item
+{
+    color: black !important;
+    position: relative;
+}
+.dropdown-item:hover , .btn-card:hover
+{
+    background: #edc72e !important;
+}
+.dropdown-menu
+{
+    background: rgba(255,255,255, .7) !important;
+}
+
+.header2
+{
+    max-height: 80px;
+    transition:all 500ms ease;
+}
+
+.header2 .cols img
+{
+    width: 110px;
+    height: 70px;
+    transition:all 500ms ease;
+}
+
+.header2 .cols h1
+{
+    font-size: 20px;
+    margin-top: 25px;
+}
+.header2 nav
+{
+    padding:7px 17px;
+    margin-top: 10px;
+}
+.header2 nav a
+{
+    font-size: 15px !important;
+}
+
+.cursiva
+{
+    transform:none;
+    color: black;
+}
+.contenido p
+{
+    margin-bottom: 20px;
+}
+
+.dropdown-toggle:hover .dropdown-menu
+{
+    display: block;
+}
+#dropdownMenuLink:visited, #dropdownMenuLink:active{
+    outline:none !important;
+}
+
+/*--------------SECTION CARDS ----------------------*/
+section
+{
+    font-family: 'Oswald', sans-serif;
+}
+.h3-cards
+{
+    text-align: center;
+    display: block;
+    padding-bottom: 20px;
+    color: #000;
+}
+
+.btn-card
+{
+    background-color: rgba(227,199,46, .8) !important;
+    display: block !important;
+    margin: 2px auto !important;
+    width: 60%;
+}
+
+.borde
+{
+    display: block;
+    margin: 10px;
+    border:3px solid rgba(227,199,46, 1);
+    padding:20px;
+    justify-content: center;
+}
+.img-card
+{
+    display: block !important;
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0px auto;
+}
+.card
+{
+    border:none !important;
+    margin-left: 30px !important;
+}
+/*----------------------------SECTION DE BENEFICIOS-----------------------------*/
+.img-beneficios
+{
+    display: block;
+    margin: 5px auto;
+    width: 150px;
+    height: 150px;
+}
+.section-card h2, h3
+{
+    text-align: center;
+    padding: .8em 5px;
+    color: #fff !important;
+}
+.section-card-naranja
+{
+    background-color: #504e4f;
+}
+.tarjeta-beneficio
+{
+    margin-bottom: 2em; 
+}
+.tarjeta-beneficio h3
+{
+   color: #fff !important;
+
+}
+.borde2
+{
+    display: block;
+    margin: 10px;
+    border:3px solid white;
+    padding:20px;
+    justify-content: center;
+}
+
+.img-logo-footer
+{
+    margin: 0px auto;
+}
+footer
+{
+    background: #1c2331 !important;
+    color: white;
+}
+.footer-copyright
+{
+    background-color: #161c27 !important;
+}
+
+/*----------------------------SECCION PRIMERA DE QUIENES-----------------------------*/
+
+.description h1, h2, h3
+{
+    color:#000 !important;
+}
+.description h1{
+    font-size: 38px;
+    text-align: center;
+}
+.description h2{
+   text-align: center;
+}
+.equipo
+{
+    background-color: #1c2331;
+}
+
+.carousel5 p {
+   
+   display: block;
+   font-size: 40px;
+   font-family: 'Oswald', sans-serif;
+   margin:0px !important;
+}
+
+.carousel5 h1 {
+   
+    display: block;
+    font-size: 70px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 180px !important;
+ }
+
+.img5{
+    filter: brightness(0.5);
+}
+
+.no-display
+{
+    display: none;
+}
+.display
+{
+    display: block;
+}
