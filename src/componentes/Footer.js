@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import '../css/estilos.css'
 import { Link } from 'react-router-dom'
 
@@ -18,13 +19,13 @@ class Footer extends Component {
                               </div>
                           
                               <div className="col-md-6 col-lg-7 text-center text-md-right">
-                                  <a className="fb-ic">
+                                  <a className="fb-ic" href ="https://facebook.com">
                                       <i className="fab fa-facebook-f white-text mr-4"> </i>
                                   </a>
-                                  <a className="tw-ic">
+                                  <a className="tw-ic" href ="https://twitter.com">
                                       <i className="fab fa-twitter white-text mr-4"> </i>
                                   </a>
-                                  <a className="ins-ic">
+                                  <a className="ins-ic" href ="https://instagram.com">
                                       <i className="fab fa-instagram white-text"> </i>
                                   </a>
                               </div>

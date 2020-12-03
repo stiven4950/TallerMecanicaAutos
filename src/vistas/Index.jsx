@@ -1,22 +1,32 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import Modal from 'react-modal';
 
 import Header from '../componentes/Header'
 import Carrousel from '../componentes/Carrousel'
-import Porque_Repcar from '../componentes/Porque_Repcar';
+import PorqueRepcar from '../componentes/PorqueRepcar';
 import Beneficios from '../componentes/Beneficios';
-import Footer from '../componentes/Footer.js';
+import Footer from '../componentes/Footer';
+import ModalLoging from '../componentes/ModalLogin'
 
 const Index = () => {
+
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const openModal = () => setIsOpenModal(true);
+  const closeModal = () => setIsOpenModal(false);
+
     return (
-        <div>
-            <Header/>
+        <>
+            <Header openModal={openModal}/>
             <Carrousel/>
-            <Porque_Repcar/>
+            <PorqueRepcar/>
             <Beneficios />
             <Footer />
-        </div>
+
+            <Modal isOpen ={isOpenModal} onRequestClose={() => closeModal()} className="size-modal modalopen" >
+              <ModalLoging closeModal={closeModal} />
+            </Modal>
+        </>
     );
   }
-
-
 export default Index;

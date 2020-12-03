@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Header from '../componentes/Header'
 import Footer from '../componentes/Footer.js';
@@ -8,13 +8,13 @@ import EquipoQuienes from '../componentes/EquipoQuienes'
 
 const Quienes = () => {
     return (
-      <div>
+      <>
         <Header/>
         <CarouselQuienes/>
         <DescripcionQuienes/>
         <EquipoQuienes/>
         <Footer/>
-      </div>
+      </>
     );
 }
 

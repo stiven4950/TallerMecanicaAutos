@@ -3,8 +3,7 @@ import './css/estilos.css';
 
 import { BrowserRouter as Router, 
   Route, 
-  Switch, 
-  Link, 
+  Switch,
   Redirect} from 'react-router-dom';
 
 import Index from "./vistas/Index";

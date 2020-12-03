@@ -1,21 +1,16 @@
-*
-{
+*{
     margin: 0px;
     padding: 0px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-body
-{
-
+body{
     font-family: 'Oswald', sans-serif;
-    
 }
 
 /* MODIFICAR EL NOMBRE DE LA PAGINA */
-h1
-{
+h1{
     font-weight: bold;
     font-size: 30px;
     margin-left: 20px;
@@ -26,10 +21,10 @@ h1
 }
 
 
-.logo
-{
-    width: 110px;
-    height: 110px;
+.logo{
+
+    width: 80px;
+    height: 80px;
     margin: 5px;
     margin-left: 50px;
 }
@@ -40,28 +35,7 @@ h1
     padding-bottom: 5px;
 }
 
-
-nav
-{
-    display: block;
-    margin-bottom: -10px;
-    margin-top: -15px;
-    padding-left: 50px;
-    min-width: 600px;
-}
-.navbar{
-    margin: 0px;
-    padding:0px;
-}
-.sticky-top
-{
-    position: -webkit-sticky;
-    position: sticky;
-    top:0;
-    z-index: 1030;
-}
-.nav-item
-{
+.nav-item{
     display: block;
     float: right;
     margin-top:10px;
@@ -74,8 +48,7 @@ nav
 }
 .dropdown-menu
 {
-    background: transparent;
-    background:rgba(255, 255, 255, .6)
+    background:rgba(0, 0, 0, .5);
 }
 .dropdown-item:hover
 {
@@ -93,21 +66,8 @@ nav
 }
 .btn:hover
 {
-    /*background:rgba(64, 224, 208, .5);*/
     background: #edc72e;
-
 }
-
-/*.paralelogramo 
-{
-    padding-bottom:10px;
-    background: #edc72e;
-    padding-right: 10px;
-    margin-right: 4px;
-    padding-left: 10px; 
-    border-radius: 4px;
-}*/
-
 
 .container-fluid
 {
@@ -120,9 +80,5 @@ nav
     max-height: 525px;
     overflow: hidden;
 }
-/* .carousel-control-prev , .carousel-control-next
-{
-
-} */
 
 

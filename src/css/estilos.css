@@ -3,21 +3,38 @@
     padding:0;
     box-sizing: border-box;
 }
-/*----------------------MODAL--------------------------*/
 
-.modal-body form button
-{
+body{
+    background: #fff;
+}
+/*----------------------MODAL--------------------------*/
+.ReactModal__Overlay{
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+.size-modal{
+    width: 100%;
+    transition: all 1s ease-in-out !important;
+}
+
+.modal-content{
+    display: block;
+    margin: 0 auto;
+}
+
+.close{
+    color: #edc72e !important;
+}
+
+form button{
   display: block;
   margin: 2px auto;
   background-color: rgba(48,51,107,.7)!important;
   color: white;
 }
-.modal-body form button:hover
-{
+form button:hover{
   background-color: rgba(48,51,107,1) !important;
 }
-.input-contenedor
-{
+.input-contenedor{
     display: block;
     margin-bottom: 15px;
     border: 1px solid #aaa;
@@ -37,8 +54,7 @@
 .input-contenedor:focus-within {
     border: 1px solid #edc72e;
 }
-.icon
-{
+.icon{
   display: block;
   font-size: 1.3em;
   margin-top: 5px;
@@ -46,15 +62,13 @@
   text-align: center;
   color: #999;
 }
-.modal-body form p
-{
+.modal-body form p{
   display: block;
   margin-top: 20px;
   text-align: center;
 }
 
-.modal 
-{
+.modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -66,8 +80,7 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.modal-content
-{
+.modal-content{
   margin: 10% auto;
   width: 45% !important;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
@@ -80,8 +93,7 @@
   border-top-right-radius: 0px;
   border-bottom: none !important;
 }
-.title
-{
+.title{
     display: block;
     margin-left: 45px;
     margin-top: 30px;
@@ -115,8 +127,7 @@
   cursor: pointer;
 }
 
-.guardarBtn
-{
+.guardarBtn{
   display: block;
   padding: 10px;
   border-radius: 4px;
@@ -143,207 +154,80 @@
 }
 
 /*-----------------------------------------------------------------*/
-/* ANIMACION DE CARGA */
-#preloader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -ms-grid-row-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #0d0d0d;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 1000000; }
 
-#original-load {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: 3px;
-  border-style: solid;
-  border-color: transparent;
-  border-top-color: #f1f1f1;
-  -webkit-animation: original 2400ms linear infinite;
-  animation: original 2400ms linear infinite;
-  z-index: 999; }
-  #original-load:before {
-    content: "";
-    position: absolute;
-    top: 7.5px;
-    left: 7.5px;
-    right: 7.5px;
-    bottom: 7.5px;
-    border-radius: 50%;
-    border: 3px;
-    border-style: solid;
-    border-color: transparent;
-    border-top-color: #f1f1f1;
-    -webkit-animation: original 2700ms linear infinite;
-    animation: original 2700ms linear infinite; }
-  #original-load:after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    border-radius: 50%;
-    border: 3px;
-    border-style: solid;
-    border-color: transparent;
-    border-top-color: #f1f1f1;
-    -webkit-animation: original 1800ms linear infinite;
-    animation: original 1800ms linear infinite; }
-
-body{
-    background: #fff;
+nav{
+    font-family: 'Oswald', sans-serif;
+    z-index: 1000;
 }
-
-header{
-    width:100%;
-    background: #504e4f;
-    border-bottom: 4px solid #000;
-    max-height: 105px;
-    transition:all 500ms ease;
+.navbar{
+    padding: 0.1rem 1rem !important;
 }
-.wrapper
+.img-logo, .img-logo-footer
 {
-    width:90%;  
-    margin:auto;
-    overflow: hidden;
-    z-index: 1;
-}
-header .logo
-{
-    float:left;
-}
-.cols
-{
+    width: 4em;
+    height: 4em;
     display: block;
-    float: left;
-    max-height: 150px;
 }
-.cols img, .img-logo-footer
-{
-    width: 140px;
-    height: 90px;
-    display: block;
-    margin-bottom:10px;
+.vertical-center{
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
-.cols h1
-{
-    display: block;
-    margin-top: 35px;
+.name-company{
     margin-left: 10px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 30px;
-    font-family: 'Oswald', sans-serif;
-}
-header .logo a
-{
-    text-decoration: none;
-    color: black;
-}
-header nav
-{
-    float: right;
-    display: block;
-    margin-top: 30px;
-    font-family: 'Oswald', sans-serif;
-    margin-right: 10px !important;
-}
-header nav a
-{
-    display:inline-block;
     color: #fff !important;
-    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-item .nav-link{
+    color: #fff !important;
     padding:10px 20px;
-    font-size: 18px;
     font-weight: bold;
     transition:all 500ms ease;
+    margin-right: 5px;
 }
-.Blogin
-{
+.Blogin{
     background: rgba(255, 227, 70, 0.8);
     border-radius: 20px;
+    color: #fff;
+    display:inline-block;
+    outline: 0;
+    padding: 10px;
 }
-header nav a:hover
-{
-    background: #edc72e;
+.nav-item a:hover{
+    background-color: #edc72e;
     text-decoration: none;
     border-radius: 20px;
 }
 
-.dropdown-toggle
-{
+.dropdown-toggle{
     font-weight: bold !important;
-    padding:10px 20px !important;
     font-size: 18px !important;
     margin-bottom: 4px;
     transition:all 500ms ease !important;
 }
 
-.dropdown-item
-{
-    color: black !important;
+.dropdown-item{
+    color: white !important;
     position: relative;
 }
-.dropdown-item:hover , .btn-card:hover
-{
+.dropdown-item:hover , .btn-card:hover{
     background: #edc72e !important;
 }
-.dropdown-menu
-{
-    background: rgba(255,255,255, .7) !important;
+.dropdown-menu{
+    background: rgba(100, 98, 98, 0.8) !important;
 }
 
-.header2
-{
-    max-height: 80px;
-    transition:all 500ms ease;
-}
-
-.header2 .cols img
-{
-    width: 110px;
-    height: 70px;
-    transition:all 500ms ease;
-}
-
-.header2 .cols h1
-{
-    font-size: 20px;
-    margin-top: 25px;
-}
-.header2 nav
-{
-    padding:7px 17px;
-    margin-top: 10px;
-}
-.header2 nav a
-{
-    font-size: 15px !important;
-}
-
-.cursiva
-{
+.cursiva{
     transform:none;
     color: black;
 }
-.contenido p
-{
+.contenido p{
     margin-bottom: 20px;
 }
 
-.dropdown-toggle:hover .dropdown-menu
-{
+.dropdown-toggle:hover .dropdown-menu{
     display: block;
 }
 #dropdownMenuLink:visited, #dropdownMenuLink:active{
@@ -351,75 +235,64 @@ header nav a:hover
 }
 
 /*--------------SECTION CARDS ----------------------*/
-section
-{
+section{
     font-family: 'Oswald', sans-serif;
 }
-.h3-cards
-{
+.h3-cards{
     text-align: center;
     display: block;
     padding-bottom: 20px;
     color: #000;
 }
 
-.btn-card
-{
+.btn-card{
     background-color: rgba(227,199,46, .8) !important;
     display: block !important;
     margin: 2px auto !important;
     width: 60%;
 }
 
-.borde
-{
+.borde{
     display: block;
     margin: 10px;
     border:3px solid rgba(227,199,46, 1);
     padding:20px;
     justify-content: center;
 }
-.img-card
-{
+.img-card{
     display: block !important;
     width: 200px !important;
     height: 200px !important;
     margin: 0px auto;
 }
-.card
-{
+.card{
     border:none !important;
-    margin-left: 30px !important;
 }
 /*----------------------------SECTION DE BENEFICIOS-----------------------------*/
-.img-beneficios
-{
+.benefit-title{
+    text-align: center;
+}
+.img-beneficios{
     display: block;
     margin: 5px auto;
     width: 150px;
     height: 150px;
 }
-.section-card h2, h3
-{
+.section-card h2, h4{
     text-align: center;
     padding: .8em 5px;
     color: #fff !important;
 }
-.section-card-naranja
-{
-    background-color: #504e4f;
+.section-card-naranja{
+    background-color: rgba(52, 58, 64, 1);
 }
-.tarjeta-beneficio
-{
-    margin-bottom: 2em; 
+.tarjeta-beneficio{
+    margin-bottom: 2em;
 }
-.tarjeta-beneficio h3
-{
+.tarjeta-beneficio h3{
    color: #fff !important;
-
 }
-.borde2
-{
+.borde2{
     display: block;
     margin: 10px;
     border:3px solid white;
@@ -427,31 +300,27 @@ section
     justify-content: center;
 }
 
-.img-logo-footer
-{
+.img-logo-footer {
     margin: 0px auto;
 }
-footer
-{
+footer {
     background: #1c2331 !important;
     color: white;
 }
-.footer-copyright
-{
+.footer-copyright{
     background-color: #161c27 !important;
 }
 
 /*----------------------------SECCION PRIMERA DE QUIENES-----------------------------*/
 
-.description h1, h2, h3
-{
+.description h1, h2, h3 {
     color:#000 !important;
 }
-.description h1{
+.description h1 {
     font-size: 38px;
     text-align: center;
 }
-.description h2{
+.description h2 {
    text-align: center;
 }
 .equipo
@@ -477,13 +346,4 @@ footer
 
 .img5{
     filter: brightness(0.5);
-}
-
-.no-display
-{
-    display: none;
-}
-.display
-{
-    display: block;
 }
