@@ -1,0 +1,74 @@
+/* Yellow Theme */
+:root{
+    --main-color: #FFC107;
+    --color-s-50: #FFF8E1;
+    --color-s-100: #FFECB3;
+    --color-s-200: #FFE082;
+    --color-s-300: #FFD54F;
+    --color-s-400: #FFCA28;
+    --color-s-500: #FFC107;
+    --color-s-600: #FFB300;
+    --color-s-700: #FFA000;
+    --color-s-800: #FF8F00;
+    --color-s-900: #FF6F00;
+}
+
+/* Orange Theme */
+:root{
+    --main-color: #FF5722;
+    --color-s-50: #FBE9E7;
+    --color-s-100: #FFCCBC;
+    --color-s-200: #FFAB91;
+    --color-s-300: #FF8A65;
+    --color-s-400: #FF7043;
+    --color-s-500: #FF5722;
+    --color-s-600: #F4511E;
+    --color-s-700: #E64A19;
+    --color-s-800: #D84315;
+    --color-s-900: #BF360C;
+}
+
+/* Blue Theme */
+:root{
+    --main-color: #2196F3;
+    --color-s-50: #E3F2FD;
+    --color-s-100: #BBDEFB;
+    --color-s-200: #90CAF9;
+    --color-s-300: #64B5F6;
+    --color-s-400: #42A5F5;
+    --color-s-500: #2196F3;
+    --color-s-600: #1E88E5;
+    --color-s-700: #1976D2;
+    --color-s-800: #1565C0;
+    --color-s-900: #0D47A1;
+}
+
+/* Green Theme */
+:root{
+    --main-color: #38B672;
+    --color-s-50: #D9FAE8;
+    --color-s-100: #A7ECC7;
+    --color-s-200: #51C185;
+    --color-s-300: #89E7B5;
+    --color-s-400: #59D693;
+    --color-s-500: #38B672;
+    --color-s-600: #12B05B;
+    --color-s-700: #009245;
+    --color-s-800: #00813C;
+    --color-s-900: #004420;
+}
+
+/* Pink Theme */
+:root{
+    --main-color: #E91E63;
+    --color-s-50: #FCE4EC;
+    --color-s-100: #F8BBD0;
+    --color-s-200: #F48FB1;
+    --color-s-300: #F06292;
+    --color-s-400: #EC407A;
+    --color-s-500: #E91E63;
+    --color-s-600: #D81B60;
+    --color-s-700: #C2185B;
+    --color-s-800: #AD1457;
+    --color-s-900: #880E4F;
+}

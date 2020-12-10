@@ -14,11 +14,11 @@ const Header = ({openModal}) =>{
             <Link to="/" className="navbar-brand">
                 <div className="container">
                     <div className="row">
-                        <div className="col-3 vertical-center">
+                        <div className="col-2 vertical-center">
                             <img src={Logo} alt="RepCar" className="img-logo p-1"/>
                         </div>
                         <div className="col-3 vertical-center">
-                            <h4 className="name-company ml-4">RepCar</h4>
+                            <h5 className="name-company ml-4">RepCar</h5>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,20 @@
+/* Theme Application */
+
+:root{
+    --main-color: #38B672;
+    --color-s-50: #D9FAE8;
+    --color-s-100: #A7ECC7;
+    --color-s-200: #51C185;
+    --color-s-300: #89E7B5;
+    --color-s-400: #59D693;
+    --color-s-500: #38B672;
+    --color-s-600: #12B05B;
+    --color-s-700: #009245;
+    --color-s-800: #00813C;
+    --color-s-900: #004420;
+
+    /* Colors Pallete */
+    --color-0: grey;
+    --color-1: white;
+    --color-2: #204051;
+}

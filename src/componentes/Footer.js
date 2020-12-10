@@ -11,7 +11,7 @@ class Footer extends Component {
               <footer className="page-footer font-small unique-color-dark">
 
 
-                  <div style={{background:'#6c58e0'}}>
+                  <div className="background-footer">
                       <div className="container">
                           <div className="row py-4 d-flex align-items-center">
                               <div className="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
@@ -71,11 +71,11 @@ class Footer extends Component {
                       <h5 className="text-uppercase font-weight-bold">Contáctenos</h5>
                       <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{width: '60px'}} />
                       <p>
-                        <i className="fas fa-home mr-4"></i>Calle 23 #9-36 N. Colombia</p>
+                        <i className="fas fa-home mr-4 icon-footer"></i>Calle 23 #9-36 N. Colombia</p>
                       <p>
-                        <i className="fas fa-envelope mr-4"></i> Repcar@gmail.com</p>
+                        <i className="fas fa-envelope mr-4 icon-footer"></i> inforepcar@repcar.com</p>
                       <p>
-                        <i className="fas fa-print mr-4"></i> +(57) 3108773870</p>
+                        <i className="fas fa-print mr-4 icon-footer"></i> +(57) 3108773870</p>
 
                     </div>
 

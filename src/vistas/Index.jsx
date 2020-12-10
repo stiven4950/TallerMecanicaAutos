@@ -23,7 +23,7 @@ const Index = () => {
             <Beneficios />
             <Footer />
 
-            <Modal isOpen ={isOpenModal} onRequestClose={() => closeModal()} className="size-modal modalopen" >
+            <Modal isOpen ={isOpenModal} onRequestClose={() => closeModal()} className="config-modal" ariaHideApp={false}>
               <ModalLoging closeModal={closeModal} />
             </Modal>
         </>

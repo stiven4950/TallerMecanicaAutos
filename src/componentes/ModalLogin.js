@@ -1,58 +1,128 @@
-import React from 'react';
+import React, {Component} from 'react';
+import { Link, } from 'react-router-dom';
 import '../css/estilos.css';
 
 
-const ModalLogin = ({closeModal }) =>{
-
+class ModalLogin extends Component{
   
+  constructor(props){
+    super(props);
+    this.state = {
+      emailController: '',
+      passwordController: '',
+      see: false,
+     };
 
-   return (
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleSee = this.handleSee.bind(this);
+  }
 
-      <div className="modal-content">
-        <div className="modal-header">
-          <div className="container">
-            <div className="row">
-              <div className="col-10">
-                <h5 className="title">INICIA SESIÓN</h5>
+  handleChange(event){
+    switch(event.target.name){
+      case "emailInput":
+        this.setState({
+          emailController: event.target.value,
+         });
+         break;
+      
+      case "passwordInput":
+        this.setState({
+          passwordController: event.target.value,
+         });
+         break;
+      default:
+        console.warn("Error");
+    }
+    
+  }
+
+  handleSubmit(event){
+    alert('A email was submitted: ' + this.state.emailController);
+    alert('A password was submitted: ' + this.state.passwordController);
+    event.preventDefault();
+  }
+
+  handleSee(){
+    this.setState({see: !this.state.see});
+  }
+
+  render(){
+    
+    const properties = this.props;
+
+    return(
+      <div className="container-fluid">
+        <div className="row vertical-center">
+          <div className="col-xs-12 col-md-10 col-lg-7 col-xl-5 mt-5 pt-5 mx-auto">
+
+            <div className="modal-content">
+              <div className="modal-header">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-10">
+                      <h5 className="title">Inicia Sesión</h5>
+                    </div>
+                    <div className="col-2">
+                      <button className="close" onClick = { ()=>properties.closeModal() } >&times;</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="col-2">
-                <button className="close" onClick = { ()=>closeModal() } >&times;</button>
+
+              <div className="modal-body">
+                  
+                <form className="newsletterForm" onSubmit={this.handleSubmit}>
+                  <div className="input-contenedor">
+                      <div className="row">
+                          <div className="col-2">
+                              <i className="fas fa-envelope icon"></i>
+                          </div>
+                          <div className="col">
+                              <input type="email"
+                              name = "emailInput"
+                              value={this.state.emailController}
+                              onChange={this.handleChange}
+                              placeholder="Correo electrónico"
+                              required/>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div className="input-contenedor">
+                      <div className="row">
+                          <div className="col-2">
+                              <i className="fas fa-key icon"></i>
+                          </div>
+                          <div className="col">
+                              <input type={ !this.state.see? "password" : "text" }
+                              onChange={this.handleChange}
+                              name="passwordInput"
+                              value={this.state.passwordController}
+                              placeholder="Contraseña"
+                              required/>
+                          </div>
+                          <div className="col-2 vertical-center">
+                            <i className="fas fa-eye d-block mx-auto"
+                              onClick={ this.handleSee.bind(this) }
+                              style={ this.state.see ? {color: 'var(--main-color)'} : {color: 'var(--color-0)'}}>
+                            </i>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <p>¿No tienes una cuenta?<Link to="" className="link1" data-toggle="modal"> Regístrate</Link></p>
+                  <input type="submit" value="Iniciar" className="guardarBtn"/>
+                  
+                </form>
               </div>
-            </div>
+            </div> 
+            
           </div>
         </div>
-
-        <div className="modal-body">
-            
-          <form action="inicioSesion.php" className="newsletterForm" method="post">
-            <div className="input-contenedor">
-                <div className="row">
-                    <div className="col-2">
-                        <i className="fas fa-envelope icon"></i>
-                    </div>
-                    <div className="col">
-                        <input type="email" name="emailUsuario" id="subscribesForm2" placeholder="Correo electrónico" required/>
-                    </div>
-                </div>
-            </div>
-
-            <div className="input-contenedor">
-                <div className="row">
-                    <div className="col-2">
-                        <i className="fas fa-key icon"></i>
-                    </div>
-                    <div className="col">
-                        <input type="password" name="contraseniaUsuario" placeholder="Contraseña" required/>
-                    </div>
-                </div>
-            </div>
-            
-            <p>¿No tienes una cuenta?<a href="void()" className="link1" data-toggle="modal"> Regístrate</a></p>
-            <input type="submit" value="Iniciar" className="guardarBtn"/>
-          </form>
-        </div>
       </div>
-   );
+    );
+  }
 }
          
 export default ModalLogin;
