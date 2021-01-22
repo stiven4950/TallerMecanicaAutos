@@ -1,17 +1,18 @@
 /* Theme Application */
 
 :root{
-    --main-color: #38B672;
-    --color-s-50: #D9FAE8;
-    --color-s-100: #A7ECC7;
-    --color-s-200: #51C185;
-    --color-s-300: #89E7B5;
-    --color-s-400: #59D693;
-    --color-s-500: #38B672;
-    --color-s-600: #12B05B;
-    --color-s-700: #009245;
-    --color-s-800: #00813C;
-    --color-s-900: #004420;
+    --main-color: #FFC107;
+    --color-s-50: #FFF8E1;
+    --color-s-100: #FFECB3;
+    --color-s-200: #FFE082;
+    --color-s-300: #FFD54F;
+    --color-s-400: #FFCA28;
+    --color-s-500: #FFC107;
+    --color-s-600: #FFB300;
+    --color-s-700: #FFA000;
+    --color-s-800: #FF8F00;
+    --color-s-900: #FF6F00;
+
 
     /* Colors Pallete */
     --color-0: grey;
