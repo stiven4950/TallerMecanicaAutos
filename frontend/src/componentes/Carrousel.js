@@ -33,10 +33,6 @@ class Carrousel extends Component{
 
                         <div className="carousel-item active">
                             <img src={this.state.screenSize<800? C1M : C1} className="d-block w-100" alt="..."/>
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </div>
                         </div>
 
                         <div className="carousel-item">
