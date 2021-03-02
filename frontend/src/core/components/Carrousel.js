@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 //import { Redirect, Link } from 'react-router-dom'
-import C1 from '../img/img1Carrusel.jpg';
-import C2 from '../img/img2Carrusel.jpg';
-import C3 from '../img/img3Carrusel.jpg';
+import C1 from '../static/img/img1Carrusel.jpg';
+import C2 from '../static/img/img2Carrusel.jpg';
+import C3 from '../static/img/img3Carrusel.jpg';
 
-import C1M from '../img/img1CarruselM.jpg';
-import C2M from '../img/img2CarruselM.jpg';
-import C3M from '../img/img3CarruselM.jpg';
-import '../css/estilos.css';
+import C1M from '../static/img/img1CarruselM.jpg';
+import C2M from '../static/img/img2CarruselM.jpg';
+import C3M from '../static/img/img3CarruselM.jpg';
+import '../static/css/estilos.css';
 
 class Carrousel extends Component{
 

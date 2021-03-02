@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 //import { Redirect, Link } from 'react-router-dom'
-import DQ1 from '../img/trabajos_realizados0.jpg'
-import DQ2 from '../img/trabajos_realizados1.jpg'
-import DQ3 from '../img/trabajos_realizados2.jpg'
-import DQ4 from '../img/trabajos_realizados3.jpg'
-import DQ5 from '../img/cambio_aceite.jpg'
+import DQ1 from '../../core/static/img/trabajos_realizados0.jpg';
+import DQ2 from '../../core/static/img/trabajos_realizados1.jpg';
+import DQ3 from '../../core/static/img/trabajos_realizados2.jpg';
+import DQ4 from '../../core/static/img/trabajos_realizados3.jpg';
+import DQ5 from '../../core/static/img/cambio_aceite.jpg';
 
-import '../css/estilos.css'
+import '../../core/static/css/estilos.css';
 
 class CarouselQuienes extends Component 
 {

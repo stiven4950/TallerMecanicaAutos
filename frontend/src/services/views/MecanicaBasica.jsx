@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Header from '../componentes/Header';
-import Footer from '../componentes/Footer';
+import Header from '../../core/components/Header';
+import Footer from '../../core/components/Footer';
 
 const MecanicaBasica = () => {
 

@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 //import { Redirect, Link } from 'react-router-dom'
-import EQ1 from '../img/anaya.jpg'
-import EQ2 from '../img/duvan.jpg'
-import EQ3 from '../img/james.jpg'
-import EQ4 from '../img/omar.jpg'
+import EQ1 from '../../core/static/img/anaya.jpg'
+import EQ2 from '../../core/static/img/duvan.jpg'
+import EQ3 from '../../core/static/img/james.jpg'
+import EQ4 from '../../core/static/img/omar.jpg'
 
-import '../css/estilos.css'
+import '../../core/static/css/estilos.css'
 
 class EquipoQuienes extends Component {
 

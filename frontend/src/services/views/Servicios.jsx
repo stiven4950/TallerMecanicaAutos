@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Header from '../componentes/Header'
-import Footer from '../componentes/Footer.js';
+import Header from '../../core/components/Header'
+import Footer from '../../core/components/Footer.js';
 
 const Servicios = () => {
     return (

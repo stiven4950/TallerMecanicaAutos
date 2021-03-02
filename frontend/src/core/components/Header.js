@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import { Link, } from 'react-router-dom';
 import Modal from 'react-modal';
 
-import Logo from '../img/logo1.png';
-import '../css/estilos.css';
-import ModalLogin from '../componentes/ModalLogin';
-import ModalRegister from '../componentes/ModalRegister';
+import Logo from '../static/img/logo1.png';
+import '../static/css/estilos.css';
+import ModalLogin from './ModalLogin';
+import ModalRegister from './ModalRegister';
 
 
 const Header = () =>{

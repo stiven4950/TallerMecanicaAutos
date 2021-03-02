@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 //import { Redirect, Link } from 'react-router-dom'
-import C1q from '../img/img5Carrusel.jpg'
+import C1q from '../../core/static/img/img5Carrusel.jpg';
 
-import '../css/estilos.css'
+import '../../core/static/css/estilos.css';
 
 class CarouselQuienes extends Component 
 {

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 
-import Header from '../componentes/Header';
-import Footer from '../componentes/Footer.js';
-import ModalLoging from '../componentes/ModalLogin';
+import Header from '../../core/components/Header';
+import Footer from '../../core/components/Footer';
+import ModalLoging from '../../core/components/ModalLogin';
 
 const Lavado = () => {
 

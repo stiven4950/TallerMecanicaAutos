@@ -4,17 +4,16 @@ import { BrowserRouter as Router,
     Redirect, 
     Route, 
     Switch} from 'react-router-dom';
-//import Home from './core/Home'
 
-    import Index from "./vistas/Index";
-    import NotFoundPage from "./vistas/404";
-    import Quienes from './vistas/Quienes';
-    import Servicios from './vistas/Servicios';
-    import MecanicaBasica from './vistas/MecanicaBasica';
-    import MecanicaEspecializada from './vistas/MecanicaEspecializada';
-    import RevisionesAutomotriz from './vistas/RevisionesAutomotriz';
-    import EsteticaAutomotriz from './vistas/EsteticaAutomotriz';
-    import Lavado from './vistas/Lavado';
+    import Index from "./core/views/Index";
+    import NotFoundPage from "./core/views/404";
+    import Quienes from './services/views/Quienes';
+    import Servicios from './services/views/Servicios';
+    import MecanicaBasica from './services/views/MecanicaBasica';
+    import MecanicaEspecializada from './services/views/MecanicaEspecializada';
+    import RevisionesAutomotriz from './services/views/RevisionesAutomotriz';
+    import EsteticaAutomotriz from './services/views/EsteticaAutomotriz';
+    import Lavado from './services/views/Lavado';
 
     const Routes = ()=>{
         return(

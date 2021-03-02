@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import '../css/estilos.css'
-import { Link } from 'react-router-dom'
+import '../static/css/estilos.css';
 
 class Footer extends Component {
     render()

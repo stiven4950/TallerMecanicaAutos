@@ -1,8 +1,8 @@
-import React from 'react'
-//import { Redirect, Link } from 'react-router-dom'
-import P1 from '../img/circulo.png'
-import '../css/estilos.css'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import P1 from '../static/img/circulo.png';
+import '../static/css/estilos.css';
 
 const PorqueRepcar = ()=>{
   
@@ -13,7 +13,7 @@ const PorqueRepcar = ()=>{
           
             <div className="row">
               <div className="col-12">
-                <h3 className="h3-cards">¿Por Qué RepCar?</h3>
+                <h3 className="h3-cards">¿Por Qué Venir a RepCar?</h3>
               </div>
             </div>
           

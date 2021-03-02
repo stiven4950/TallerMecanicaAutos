@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link, } from 'react-router-dom';
-import '../css/estilos.css';
+
+import '../static/css/estilos.css';
 
 
 class ModalLogin extends Component{
