@@ -1,12 +1,33 @@
-import React from 'react'
+import React, {useState} from 'react';
 import { Link, } from 'react-router-dom';
-//import { Redirect, Link } from 'react-router-dom'
-import Logo from '../img/logo1.png'
-import '../css/estilos.css'
+import Modal from 'react-modal';
 
-const Header = ({openModal}) =>{
+import Logo from '../img/logo1.png';
+import '../css/estilos.css';
+import ModalLogin from '../componentes/ModalLogin';
+import ModalRegister from '../componentes/ModalRegister';
+
+
+const Header = () =>{
+
+    const [isOpenModalLogin, setIsOpenModalLogin] = useState(false);
+    const [isOpenModalRegister, setIsOpenModalRegister] = useState(false);
+  
+    const openModalLogin = () =>{ setIsOpenModalLogin(true); setIsOpenModalRegister(false); }
+    const closeModalLogin = () =>{ setIsOpenModalLogin(false); }
+
+    const openModalRegister = () =>{ setIsOpenModalLogin(false); setIsOpenModalRegister(true); }
+    const closeModalRegister = () =>{ setIsOpenModalRegister(false); }
 
     return(
+    <>
+        <Modal isOpen ={isOpenModalLogin} onRequestClose={() => closeModalLogin()} className="config-modal" ariaHideApp={false}>
+            <ModalLogin closeModalLogin={closeModalLogin} openOther={openModalRegister} />
+        </Modal>
+
+        <Modal isOpen ={isOpenModalRegister} onRequestClose={() => closeModalRegister()} className="config-modal" ariaHideApp={false}>
+            <ModalRegister closeModalRegister={closeModalRegister} openOther={openModalLogin} />
+        </Modal>
 
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
@@ -52,12 +73,14 @@ const Header = ({openModal}) =>{
                     </li>
 
                     <li className="nav-item vertical-center mx-auto">
-                        <Link to="" className="Blogin" onClick={()=>openModal()}> Inicia Sesión </Link>
+                        <Link to="#" className="Blogin" onClick={()=>openModalLogin()}> Inicia Sesión </Link>
                     </li>
                 
                 </ul>
             </div>
         </nav>
+
+    </>
     );
 }
 

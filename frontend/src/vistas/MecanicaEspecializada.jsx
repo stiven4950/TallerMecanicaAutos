@@ -4,6 +4,7 @@ import Header from '../componentes/Header'
 import Footer from '../componentes/Footer.js';
 
 const MecanicaEspecializada  = () => {
+
     return (
         <>
             <Header/>

@@ -55,7 +55,7 @@ form button:hover{
     display: block;
     margin-bottom: 15px;
     border: 1px solid #aaa;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 5px 2px;
 }
 .modal-body input[type="text"],.modal-body input[type="password"], .modal-body input[type="email"], .modal-body input[type="tel"], select

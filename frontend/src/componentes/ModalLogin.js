@@ -56,7 +56,7 @@ class ModalLogin extends Component{
         <div className="row vertical-center">
           <div className="col-xs-12 col-md-10 col-lg-7 col-xl-5 mt-5 pt-5 mx-auto">
 
-            <div className="modal-content">
+            <div className="modal-content p-4">
               <div className="modal-header">
                 <div className="container">
                   <div className="row">
@@ -64,7 +64,7 @@ class ModalLogin extends Component{
                       <h5 className="title">Inicia Sesión</h5>
                     </div>
                     <div className="col-2">
-                      <button className="close" onClick = { ()=>properties.closeModal() } >&times;</button>
+                      <button className="close" onClick = { ()=>properties.closeModalLogin() } >&times;</button>
                     </div>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ class ModalLogin extends Component{
                       </div>
                   </div>
                   
-                  <p>¿No tienes una cuenta?<Link to="" className="link1" data-toggle="modal"> Regístrate</Link></p>
+                  <p>¿No tienes una cuenta?<Link to="#" onClick={()=>properties.openOther()} className="link1" data-toggle="modal"> Regístrate</Link></p>
                   <input type="submit" value="Iniciar" className="guardarBtn"/>
                   
                 </form>
