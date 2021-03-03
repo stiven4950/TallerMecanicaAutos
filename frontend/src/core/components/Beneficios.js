@@ -1,7 +1,6 @@
 import React from 'react';
 //import { Redirect, Link } from 'react-router-dom'
-import '../css/estilos.css';
-import P1 from '../img/circulo.png';
+import P1 from '../static/img/circulo.png';
 
 const Beneficios = ()=>{
 

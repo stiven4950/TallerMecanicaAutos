@@ -10,7 +10,6 @@ class Footer extends Component {
         
               <footer className="page-footer font-small unique-color-dark">
 
-
                   <div className="background-footer">
                       <div className="container">
                           <div className="row py-4 d-flex align-items-center">

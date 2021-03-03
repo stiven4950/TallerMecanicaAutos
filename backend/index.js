@@ -25,9 +25,10 @@ mongoose.connect(process.env.DATABASE, {
 
 // Routed setup
 
-app.use("/api/user", require("./routes/userRoute"));
+//app.use("/api/user", require("./routes/userRoute"));
 app.use("/api/service", require("./routes/serviceRoute"));
-app.use("/api/vehicle", require("./routes/vehicleRoute"));
+app.use("/api/brand", require("./routes/brandRoute"));
+//app.use("/api/vehicle", require("./routes/vehicleRoute"));
 
 // Routes
 app.get('/', (req, res) => {
@@ -36,7 +37,6 @@ app.get('/', (req, res) => {
 
 // Listen Port
 const port = process.env.PORT
-
 
 app.listen(port, () => {
     console.log(`Servidor está siendo ejecutado en el puerto ${port}`);

@@ -2,13 +2,15 @@
 @import './global_theme.css';
 
 *{
-    margin:0; 
+    margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Nunito', Helvetica;
 }
 
 body{
     background: white;
+    font-size: 16px;
 }
 a{
     color: white;
@@ -16,6 +18,16 @@ a{
 a:hover{
     color: var(--main-color);
     text-shadow: 1px 0px 0px var(--color-2);
+}
+/*-----------------------CARD--------------------------*/
+.card{
+    min-height: 452px !important;
+}
+
+.card a{
+    position: absolute;
+    bottom: 0px;
+    right: 20%;
 }
 /*---------------------CAROUSEL------------------------*/
 .carousel-control-next-icon, .carousel-control-prev-icon{
@@ -249,11 +261,11 @@ nav{
 section{
     font-family: 'Oswald', sans-serif;
 }
-.h3-cards{
+.h2-cards{
     text-align: center;
     display: block;
     padding-bottom: 20px;
-    color: black;
+    color: black !important;
 }
 
 .btn-card{
@@ -267,7 +279,14 @@ section{
     display: block;
     margin: 10px;
     border:3px solid var(--main-color);
-    padding:20px;
+    padding:3em;
+    justify-content: center;
+}
+.borde1{
+    display: block;
+    margin: 10px;
+    border:3px solid brown;
+    padding:3em;
     justify-content: center;
 }
 .img-card{
@@ -289,7 +308,7 @@ section{
     width: 12rem !important;
     height: 12rem !important;
 }
-.section-card h2, h4{
+h4{
     text-align: center;
     padding: .8em 5px;
     color: white !important;
