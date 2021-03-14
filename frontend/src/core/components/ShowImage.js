@@ -1,11 +1,11 @@
 import React from 'react';
-import {API} from '../../config';
+import { API } from '../../config';
 
-const ShowImage=({item,url,attr})=>{
+const ShowImage = ({ item, url, attr }) => {
     return (
         <>
             <img src={`${API}/${url}/photo/${item._id}`}
-            alt={item.name} className={attr}
+                alt={item.name} className={attr}
             />
         </>
     );

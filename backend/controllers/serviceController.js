@@ -49,7 +49,7 @@ exports.create = (req, res)=>{
 
 exports.list = (req, res) => {
     let order = req.query.order ? req.query.order : 'asc';
-    let sortBy = req.query.sortBy ? req.query.sortBy : 'name';
+    let sortBy = req.query.sortBy ? req.query.sortBy : 'createdAt';
 
     Service.find().select('-photo')
         .populate('service')
@@ -62,6 +62,33 @@ exports.list = (req, res) => {
             }
 
             res.json(services);
+        });
+}
+
+/*exports.findById = (req, res) => {
+
+    Service.findById(req.params.serviceId)
+        .exec((err, service) => {
+            if (err) {
+                return res.status(400).json({
+                    error: 'Servicio no encontrado'
+                });
+            }
+
+            res.json(service);
+        });
+}*/
+
+exports.findName = (req, res) => {
+    Service.find({'slug':req.params.serviceName})
+        .exec((err, service) => {
+            if (err) {
+                return res.status(400).json({
+                    error: 'Servicio no encontrado'
+                });
+            }
+
+            res.json(service);
         });
 }
 
@@ -92,6 +119,8 @@ exports.serviceId = (req, res, next) => {
             next();
         });
 }
+
+
 
 exports.photo = (req, res, next) => {
     if (req.service.photo.data) {

@@ -1,0 +1,535 @@
+SERVICIOS
+
+-> name = Mecánica Básica
+
+-> description = Alineación y Balanceo/Cambio de Aceite/Cambio de Discos/Cambio de Pastillas/Sincronización
+
+-> type = preventivo
+
+-> slug = mecanica-basica
+//--------------------------------------------------------------------------------------------------------
+-> name = Mecánica Especializada
+
+-> description = Aire Acondicionado/Amortiguadores/Correa de Repartición/Electricidad y Electrónica/Kit de Embreague/Reparación de Motor/Suspensión
+
+-> type = preventivo
+
+-> slug = mecanica-especializada
+//--------------------------------------------------------------------------------------------------------
+-> name = Revisiones Automotriz
+
+-> description = Diagnóstico Automotriz/Peritaje/Revisión Mecánica/Revisión Por Kilometraje/Revisión/Técnico-Mecánica
+
+-> type = correctivo
+
+-> slug = revisiones-automotriz
+//--------------------------------------------------------------------------------------------------------
+-> name = Estética Automotriz
+
+-> description = Latonería/Pintura
+
+-> type = embellecimiento
+
+-> slug = estetica-automotriz
+
+//--------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------
+MICROSERVICIOS MECÁNICA BÁSICA
+
+-> title = ALINEACIÓN Y BALANCEO
+
+-> subtile = ALARGA LA VIDA ÚTIL DE LA SUSPENSIÓN Y LAS LLANTAS DE TU CARRO
+
+-> slug = alineacion-y-balanceo
+
+-> description =   La Alineación resulta en un carro con mayor agarre y vida útil de las llantas, dirección precisa, mejora en desempeño del carro y reducción de consumo de combustible y el balanceo se realiza para balancear el peso de cada llanta de tu vehículo.
+
+-> recomendation = Te recomendamos realizar una Alineación y Balanceo cada 10.000 kilómetros para garantizar tu seguridad y la de todos.
+
+-> recomendation2 = POR ESO ES IMPORTANTE ESTAR ATENTOS A LAS VIBRACIONES O REALIZAR EL SERVICIO DE ALINEACIÓN Y BALANCEO CADA 100.000 KILÓMETROS. RECUERDE QUE NUESTROS TALLERES MECÁNICOS Y ASESORES ESTÁN LISTOS PARA RESPONDERTE CUALQUIER INQUIETUD CON TU VEHÍCULO.
+
+-> service = 6048274299c3ba10440bd70b
+
+//--------------------------------------------------------------------------------------------------------
+
+-> title = CAMBIO DE ACEITE
+
+-> subtile = ALARGA LA VIDA ÚTIL DE LA SUSPENSIÓN Y LAS LLANTAS DE TU CARRO
+
+-> slug = cambio-de-aceite
+
+-> description =   El aceite reduce la fricción y controla la temperatura del motor. Cambia seguido el aceite para asegurar el rendimiento y la vida de tu motor.
+
+-> recomendation = Te recomendamos realizar cambio de aceite de forma oportuna, los periodos de cambio pueden oscilar entre 5.000 a 10.000 Km.
+
+-> recomendation2 = POR ESO ES IMPORTANTE ESTAR ATENTOS A LAS VIBRACIONES O REALIZAR EL SERVICIO DE ALINEACIÓN Y BALANCEO CADA 100.000 KILÓMETROS. RECUERDE QUE NUESTROS TALLERES MECÁNICOS Y ASESORES ESTÁN LISTOS PARA RESPONDERTE CUALQUIER INQUIETUD CON TU VEHÍCULO.
+
+-> service = 6048274299c3ba10440bd70b
+
+//--------------------------------------------------------------------------------------------------------
+
+MICROSERVICIOS MECÁNICA ESPECIALIZADA
+
+-> title = AMORTIGUADORES
+
+-> subtile = GARANTIZA TU SEGURIDAD
+
+-> slug = amortiguadores
+
+-> description =   Unos amortiguadores desgastados puede tener serias implicaciones en la estabilidad de tu vehículo y, por consiguiente, en tu seguridad. No te olvides de revisar su estado cada 10.000 Km para cambiarlos si es necesario.
+
+-> recomendation = Los amortiguadores son los que dan estabilidad, confort y seguridad a la conducción, pues evitan los movimientos bruscos del carro, entre otras cosas.
+
+-> recomendation2 = TE RECOMENDAMOS REALIZAR TU CAMBIO DE AMORTIGUADORES CADA 60.000 KILÓMETROS O ENTRE 5 Y 7 AÑOS. SIN EMBARGO, ES RECOMENDABLE QUE CADA 10.000 KM SE HAGA UNA REVISIÓN AUTOMOTRIZ DE TODO EL SISTEMA DE SUSPENSIÓN.
+
+-> service = 60497bcff367c33a98f9d032
+
+//--------------------------------------------------------------------------------------------------------
+
+-> title = AIRE ACONDICIONADO
+
+-> subtile = CONFORT PARA TI
+
+-> slug = aire-acondicionado
+
+-> description =   Es importante hacer una limpieza anual del circuito y realizar un tratamiento antibacteriano y cada dos años cambiar los filtros y realizar la recarga de gas.
+
+-> recomendation = Es importante hacer una limpieza anual del circuito y realizar un tratamiento antibacteriano y cada dos años cambiar los filtros y realizar la recarga de gas.
+
+-> recomendation2 = SE SUPONE QUE CADA AÑO EL CARRO PIERDE ENTRE EL 15 Y EL 20% DEL GAS QUE RECORRE EL CIRCUITO, ASÍ QUE DEPENDIENDO DEL USO QUE LE DEMOS, PODEMOS RECARGARLO CADA DOS AÑOS, DEPENDIENDO DE LA TEMPERATURA Y HUMEDAD DE LA ZONA DONDE VIVIMOS.
+
+-> service = 60497bcff367c33a98f9d032
+
+//--------------------------------------------------------------------------------------------------------
+
+-> title = CORREA DE REPARTICIÓN
+
+-> subtile = EL MOVIMIENTO DEL MOTOR DEPENDE DE ELLA
+
+-> slug = correa-de-reparticion
+
+-> description = La correa de repartición es parte fundamental del motor, se debe cambiar cada 50.000 km. Su ruptura puede ocasionar daños graves.
+
+-> recomendation = El cambio del cadena o de la correa de distribución oscila entre los 50.000 Km y 70.000 Km, dependiendo del modelo del vehículo.
+
+-> recomendation2 = EVITÁNDONOS RIESGOS MUY ALTOS Y CONSECUENCIAS QUE PUEDEN TERMINAR SIENDO MUY COSTOSAS.
+
+-> service = 60497bcff367c33a98f9d032
+
+
+
+//-------------------------------------------------------
+MODELOS CHEVROLET
+
+[
+    {
+        "name":"ALTO",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"AVEO",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"AVEO EMOTION",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"AVEO FAMILY",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"AVEO GTI",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"BEAT",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"CAPTIVA",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"CAPTIVA SPORT",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"CHEVY",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"COBALT",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"CORSA",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"CORSA ACTIVE",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"CORSA EVOLUTION",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"CORSA WIND",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"CRUZE",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"CRUZE TURBO",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"DIVAN",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"DMAX",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"EPICA",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"ESTEEM",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"GRAND VITARA",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"GRAND VITARA LX",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"JIMNY",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"LUV",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"LUV DMAX",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"LUX DMAX",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"N200",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"N300",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"NPR",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"ONIX",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"OPTRA",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"RODEO",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"SAIL",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"SAIL LT",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"SONIC",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"SPARK",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"SPARK GT",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"SPARK LIFE",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"SWIFT",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"TRACKER",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"TRAVERSE",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"TRAVERSE 6V",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"VITARA",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"VIVANT",
+        "brand":"603ec5eea2f72639b577f2c4"
+    },
+    {
+        "name":"ZAFIRA",
+        "brand":"603ec5eea2f72639b577f2c4"
+    }
+]
+
+//-------------------------------------------------------
+MODELOS FORD
+
+[
+    {
+        "name":"ECOSPORT",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"ECOSPORT AUT",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"EDGE",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"ESCAPE",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"EXPEDITION XLT",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"EXPLORER",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"EXPLORER EXPEDITION",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"EXPLORER LIMITED",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"EXPLORER SPORT TRAC",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"EXPLORER XLT",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"F-150",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"FIESTA",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"FOCUS",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"FUSION",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"FUSION TURBO",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"LASER",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"NEW ESCAPE TURBO",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"PLATINUM",
+        "brand":"603ec608a2f72639b577f2c5"
+    },
+    {
+        "name":"RANGER",
+        "brand":"603ec608a2f72639b577f2c5"
+    }
+]
+
+//-------------------------------------------------------
+MODELOS HONDA
+
+[
+    {
+        "name":"CIVIC",
+        "brand":"603ec646a2f72639b577f2c6"
+    },
+    {
+        "name":"CR-V",
+        "brand":"603ec646a2f72639b577f2c6"
+    }
+]
+
+//-------------------------------------------------------
+MODELOS HYUNDAI
+
+[
+    {
+        "name":"ACCENT",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"ACCENT COUPE",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"ACCENT GL",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"ACCENT GLS",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"ACCENT GYRO",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"ACCENT VERNA",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"ACCENT VISION",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"ACCENT WEB",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"ATOS",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"ATOS PRIME",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"CRETA",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"ELANTRA",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"ELANTRA SUPREME",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"EON",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"GENESIS TURBO",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"GETZ",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"GRAND I10",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"H1",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"I10",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"I25",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"I30",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"I35",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"I45",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"NEW ELANTRA",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"NEW TUCSON",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"SANTAFE",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"SANTA FE",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"TUCSON",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"TUCSON IX35",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"VELOSTER",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"VERACRUZ",
+        "brand":"603ec665a2f72639b577f2c7"
+    },
+    {
+        "name":"VISION",
+        "brand":"603ec665a2f72639b577f2c7"
+    }
+]

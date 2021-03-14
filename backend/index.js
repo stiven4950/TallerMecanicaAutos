@@ -27,7 +27,10 @@ mongoose.connect(process.env.DATABASE, {
 
 //app.use("/api/user", require("./routes/userRoute"));
 app.use("/api/service", require("./routes/serviceRoute"));
+app.use("/api/microservice", require("./routes/microServiceRoute"));
 app.use("/api/brand", require("./routes/brandRoute"));
+app.use("/api/carrousel", require("./routes/carrouselRoute"));
+app.use("/api/carmodel", require("./routes/carModelRoute"));
 //app.use("/api/vehicle", require("./routes/vehicleRoute"));
 
 // Routes

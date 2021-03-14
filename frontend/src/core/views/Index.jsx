@@ -2,24 +2,25 @@
 import React, {useState, useEffect} from 'react';
 
 // Custom packges
-import {getServices, getBrands} from '../apiCore';
+import {getLists} from '../apiCore';
 
 import Header from '../components/Header';
 import Carrousel from '../components/Carrousel';
 import PorqueRepcar from '../components/PorqueRepcar';
 import Footer from '../components/Footer';
 import BrandsSection from '../components/BrandsSection';
-import Beneficios from '../components/Beneficios';
+
+import '../static/css/estilos.css';
 
 const Index = () => {
     
     const [services, setServices] = useState([]);
-    const [brands, setBrands] = useState([]);
+    const [carrousel, setCarrousel] = useState([]);
 
-    const [error, setError] = useState(false);
+    const [, setError] = useState(false);
 
     const loadServices = ()=>{
-        getServices().then(data=>{
+        getLists('service').then(data=>{
             if (data.error) {
                 setError(data.error);
             }else{
@@ -29,12 +30,12 @@ const Index = () => {
         });
     }
 
-    const loadBrands = ()=>{
-        getBrands().then(data=>{
+    const loadCarrousel = ()=>{
+        getLists('carrousel').then(data=>{
             if (data.error) {
                 setError(data.error);
             }else{
-                setBrands(data);
+                setCarrousel(data);
                 console.log(data);
             }
         });
@@ -42,15 +43,15 @@ const Index = () => {
 
     useEffect(()=>{
         loadServices();
-        loadBrands();
+        loadCarrousel();
     }, []);
 
     return (
         <>
             <Header/>
-            <Carrousel/>
+            <Carrousel carrousel={carrousel}/>
             <PorqueRepcar services={services}/>
-            <BrandsSection brands={brands}/>
+            <BrandsSection/>
             <Footer />
         </>
     );

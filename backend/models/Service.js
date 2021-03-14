@@ -20,6 +20,12 @@ const serviceSchema = new mongoose.Schema(
             maxlength: 32,
             unique: false
         },
+        slug: {
+            type: String,
+            require: true,
+            maxlength: 32,
+            unique: true
+        },
         photo: {
             data: Buffer,
             contentType: String,

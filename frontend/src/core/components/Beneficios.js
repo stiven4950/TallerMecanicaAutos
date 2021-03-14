@@ -2,7 +2,7 @@ import React from 'react';
 //import { Redirect, Link } from 'react-router-dom'
 import P1 from '../static/img/circulo.png';
 
-const Beneficios = ()=>{
+const Beneficios = () => {
 
     const listBenefits = [
         "Servicios Garantizados",
@@ -11,24 +11,24 @@ const Beneficios = ()=>{
         "Servicio Domicilio",
     ];
 
-    const benefits = listBenefits.map((benefit)=>{
+    const benefits = listBenefits.map((benefit) => {
         return (
             <div className="item col-md- tarjeta-beneficio" key={benefit}>
                 <div className="row vertical-center">
                     <div className="col-12">
                         <h4 className="benefit-title">{benefit}</h4>
-                        { benefit.length > 18 ? "": <br/>}
+                        {benefit.length > 18 ? "" : <br />}
                     </div>
                 </div>
                 <div className="row vertical-center">
                     <div className="col-12">
-                        <img src={P1} className="img-beneficios" alt=""/>
+                        <img src={P1} className="img-beneficios" alt="" />
                     </div>
                 </div>
             </div>
         );
     });
-    
+
     return (
         <section className="py-1 section-card section-card-naranja">
             <div className="borde2">
@@ -41,11 +41,11 @@ const Beneficios = ()=>{
                     </div>
 
                     <div className="row vertical-center">
-                        
+
                         <div className="owl-carousel  owl-theme">
-                            { benefits.map((benefit=>{
+                            {benefits.map((benefit => {
                                 return benefit;
-                            })) }
+                            }))}
                         </div>
 
                     </div>
@@ -54,5 +54,5 @@ const Beneficios = ()=>{
         </section>
     );
 }
-         
+
 export default Beneficios;

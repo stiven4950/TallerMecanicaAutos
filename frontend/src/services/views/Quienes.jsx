@@ -7,15 +7,15 @@ import DescripcionQuienes from '../../services/components/DescripcionQuienes'
 import EquipoQuienes from '../../services/components/EquipoQuienes'
 
 const Quienes = () => {
-    return (
-      <>
-        <Header/>
-        <CarouselQuienes/>
-        <DescripcionQuienes/>
-        <EquipoQuienes/>
-        <Footer/>
-      </>
-    );
+  return (
+    <>
+      <Header />
+      <CarouselQuienes />
+      <DescripcionQuienes />
+      <EquipoQuienes />
+      <Footer />
+    </>
+  );
 }
 
 export default Quienes;

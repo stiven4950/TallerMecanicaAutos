@@ -5,8 +5,6 @@ import EQ2 from '../../core/static/img/duvan.jpg'
 import EQ3 from '../../core/static/img/james.jpg'
 import EQ4 from '../../core/static/img/omar.jpg'
 
-import '../../core/static/css/estilos.css'
-
 class EquipoQuienes extends Component {
 
 

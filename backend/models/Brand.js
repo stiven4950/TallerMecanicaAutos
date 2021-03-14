@@ -16,5 +16,5 @@ const brandSchema = new mongoose.Schema(
 
     { timestamps: true }
 );
-/* type: preventivo, correctivo, embellecimiento */
+/*type: preventivo, correctivo, embellecimiento*/
 module.exports = mongoose.model('Brand', brandSchema);
