@@ -17,7 +17,7 @@ const Domicilio = () => {
                                 <div className="row">
                                     <div className="col-5">
                                         <div className="icon-domicilio vertical-center ml-auto blue-gradient">
-                                            <i class="fas fa-car"></i>
+                                            <i className="fas fa-car"></i>
                                         </div>
                                     </div>
                                     <div className="col-7">
@@ -30,7 +30,7 @@ const Domicilio = () => {
                                 <div className="row">
                                     <div className="col-5">
                                         <div className="icon-domicilio vertical-center ml-auto blue-gradient">
-                                            <i class="fas fa-home"></i>
+                                            <i className="fas fa-home"></i>
                                         </div>
                                     </div>
                                     <div className="col-7">

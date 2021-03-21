@@ -25,7 +25,6 @@ const Index = () => {
                 setError(data.error);
             }else{
                 setServices(data);
-                console.log(data);
             }
         });
     }
@@ -36,7 +35,6 @@ const Index = () => {
                 setError(data.error);
             }else{
                 setCarrousel(data);
-                console.log(data);
             }
         });
     }

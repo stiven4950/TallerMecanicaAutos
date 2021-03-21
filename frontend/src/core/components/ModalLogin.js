@@ -76,12 +76,12 @@ class ModalLogin extends Component {
                 <div className="row my-3">
                   <div className="col">
                     <div className="icon-login vertical-center ml-auto">
-                      <i class="fab fa-google"></i>
+                      <i className="fab fa-google"></i>
                     </div>
                   </div>
                   <div className="col">
                     <div className="icon-login vertical-center mr-auto">
-                      <i class="fab fa-facebook"></i>
+                      <i className="fab fa-facebook"></i>
                     </div>
                   </div>
                 </div>

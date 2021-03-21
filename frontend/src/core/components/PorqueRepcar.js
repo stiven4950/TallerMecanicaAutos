@@ -17,7 +17,7 @@ const PorqueRepcar = ({ services }) => {
 
           <div className="row vertical-center">
             {services.map((service, i) => (
-              <CardServicio key={service._id} service={service} />
+              <CardServicio key={i} service={service} />
             ))}
           </div>
 
@@ -27,4 +27,4 @@ const PorqueRepcar = ({ services }) => {
   );
 }
 
-export default PorqueRepcar
+export default PorqueRepcar;

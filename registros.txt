@@ -124,183 +124,279 @@ MODELOS CHEVROLET
 [
     {
         "name":"ALTO",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2000,
+        "max":2019
     },
     {
         "name":"AVEO",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2006,
+        "max":2019
     },
     {
         "name":"AVEO EMOTION",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2007,
+        "max":2019
     },
     {
         "name":"AVEO FAMILY",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2009,
+        "max":2019
     },
     {
         "name":"AVEO GTI",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2007,
+        "max":2019
     },
     {
         "name":"BEAT",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2019,
+        "max":2019
     },
     {
         "name":"CAPTIVA",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2007,
+        "max":2019
     },
     {
         "name":"CAPTIVA SPORT",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2010,
+        "max":2019
     },
     {
         "name":"CHEVY",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2005,
+        "max":2019
     },
     {
         "name":"COBALT",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2008,
+        "max":2019
     },
     {
         "name":"CORSA",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2000,
+        "max":2019
     },
     {
         "name":"CORSA ACTIVE",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2004,
+        "max":2019
     },
     {
         "name":"CORSA EVOLUTION",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2003,
+        "max":2019
     },
     {
         "name":"CORSA WIND",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2002,
+        "max":2019
     },
     {
         "name":"CRUZE",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2006,
+        "max":2019
     },
     {
         "name":"CRUZE TURBO",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2017,
+        "max":2019
     },
     {
         "name":"DIVAN",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2008,
+        "max":2019
     },
     {
         "name":"DMAX",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2006,
+        "max":2019
     },
     {
         "name":"EPICA",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2004,
+        "max":2019
     },
     {
         "name":"ESTEEM",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2000,
+        "max":2019
     },
     {
         "name":"GRAND VITARA",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2000,
+        "max":2014
     },
     {
         "name":"GRAND VITARA LX",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2005,
+        "max":2019
     },
     {
         "name":"JIMNY",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2000,
+        "max":2019
     },
     {
         "name":"LUV",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2000,
+        "max":2019
+    },
+    {
+        "name":"LUV 4x2",
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2005,
+        "max":2005
     },
     {
         "name":"LUV DMAX",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2005,
+        "max":2019
     },
     {
         "name":"LUX DMAX",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2008,
+        "max":2019
     },
     {
         "name":"N200",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2010,
+        "max":2019
     },
     {
         "name":"N300",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2009,
+        "max":2019
     },
     {
         "name":"NPR",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2002,
+        "max":2002
     },
     {
         "name":"ONIX",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2016,
+        "max":2019
     },
     {
         "name":"OPTRA",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2004,
+        "max":2019
     },
     {
         "name":"RODEO",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2000,
+        "max":2019
     },
     {
         "name":"SAIL",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2012,
+        "max":2019
     },
     {
         "name":"SAIL LT",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2014,
+        "max":2019
     },
     {
         "name":"SONIC",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2011,
+        "max":2019
     },
     {
         "name":"SPARK",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2005,
+        "max":2019
     },
     {
         "name":"SPARK GT",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2011,
+        "max":2019
     },
     {
         "name":"SPARK LIFE",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2017,
+        "max":2019
     },
     {
         "name":"SWIFT",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2000,
+        "max":2019
     },
     {
         "name":"TRACKER",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2011,
+        "max":2019
     },
     {
         "name":"TRAVERSE",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2011,
+        "max":2019
     },
     {
         "name":"TRAVERSE 6V",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2015,
+        "max":2019
     },
     {
         "name":"VITARA",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2000,
+        "max":2019
     },
     {
         "name":"VIVANT",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2007,
+        "max":2019
     },
     {
         "name":"ZAFIRA",
-        "brand":"603ec5eea2f72639b577f2c4"
+        "brand":"603ec5eea2f72639b577f2c4",
+        "min":2002,
+        "max":2019
     }
 ]
 

@@ -1,0 +1,33 @@
+.bit-card {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    box-shadow: 0px 3px 5px #ccc;
+}
+
+.bit-card:hover {
+    box-shadow: 0px 3px 20px #ccc;
+    cursor: pointer;
+}
+
+.bit-card .select {
+    display: block;
+    z-index: 1000;
+    opacity: 0.5;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: var(--main-color);
+    color: rgb(27, 27, 27);
+    font-size: 3em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.bit-card p{
+    font-size: 0.6em;
+}

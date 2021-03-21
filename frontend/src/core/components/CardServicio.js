@@ -13,12 +13,9 @@ const CardServicio = ({ service }) => {
                 <div className="card-body">
                     <h5 className="card-title text-center">{service.name}</h5>
                     <p className="card-text text-center">
-                        {service.description.split("/").map((item, i) => {
-
-                            if (i < 5) return (
-                                <><span className="d-block" key={i}>{item}</span></>);
-                            else return (<></>);
-                        })}
+                        {service.description.split("/").map((item, i) => (
+                            <span className="d-block" key={i}>{item}</span>
+                        ))}
                     </p>
 
                     <Link to={`servicio/${service.slug}`} className="btn btn-card rounded-pill waves-effect">Saber más...</Link>

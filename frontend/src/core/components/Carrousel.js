@@ -22,15 +22,15 @@ class Carrousel extends Component {
                 <div id="carouselExampleCaptions" className="carousel slide carousel-fade" data-ride="carousel">
                     <ol className="carousel-indicators">
                         {properties.carrousel.map((item, i) => (
-                            <li data-target="#carouselExampleCaptions" key={i} data-slide-to={i} className={i === 0 ? 'active' : ''}></li>
+                            <li data-target="#carouselExampleCaptions" key={item._id} data-slide-to={i} className={i === 0 ? 'active' : ''}></li>
                         ))}
                     </ol>
                     <div className="carousel-inner">
 
                         {properties.carrousel.map((item, i) => (
-                            <div className={`carousel-item ${i === 0 ? 'active' : ''}`}>
+                            <div className={`carousel-item ${i === 0 ? 'active' : ''}`} key={item._id}>
                                 <Link to={`/${item.link}`}>
-                                    <img key={item._id} src={this.state.screenSize < 900
+                                    <img src={this.state.screenSize < 900
                                         ?
                                         `${API}/carrousel/photoMobile/${item._id}`
                                         :

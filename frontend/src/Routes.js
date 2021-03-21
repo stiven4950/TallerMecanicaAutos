@@ -12,6 +12,7 @@ import NotFoundPage from "./core/views/404";
 import Quienes from './services/views/Quienes';
 import Servicios from './services/views/Servicios';
 import Cotizar from './services/views/Cotizar';
+import Panel from './admin/views/Panel';
 
 const Routes = () => {
     return (
@@ -21,6 +22,7 @@ const Routes = () => {
                 <Route exact path="/404" component={NotFoundPage} />
                 <Route exact path="/quienes" component={Quienes} />
                 <Route exact path="/servicio/cotizar" component={Cotizar} />
+                <Route exact path="/admin" component={Panel} />
                 <Route exact path="/servicio/:slug" component={Servicios} />
                 <Redirect to="/404" />
             </Switch>

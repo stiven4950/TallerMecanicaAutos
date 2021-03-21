@@ -14,6 +14,18 @@ const CarModelSchema = new mongoose.Schema(
             ref:'Brand',
             require:true,
         },
+        min :{
+            type: Number,
+            require: true,
+            maxlength: 4,
+            unique: false,
+        },
+        max:{
+            type: Number,
+            require: true,
+            maxlength: 4,
+            unique: false,
+        },
     },
 
     { timestamps: true }
