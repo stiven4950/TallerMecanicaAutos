@@ -49,7 +49,6 @@ MICROSERVICIOS MECÁNICA BÁSICA
 -> recomendation2 = POR ESO ES IMPORTANTE ESTAR ATENTOS A LAS VIBRACIONES O REALIZAR EL SERVICIO DE ALINEACIÓN Y BALANCEO CADA 100.000 KILÓMETROS. RECUERDE QUE NUESTROS TALLERES MECÁNICOS Y ASESORES ESTÁN LISTOS PARA RESPONDERTE CUALQUIER INQUIETUD CON TU VEHÍCULO.
 
 -> service = 6048274299c3ba10440bd70b
-
 //--------------------------------------------------------------------------------------------------------
 
 -> title = CAMBIO DE ACEITE
@@ -403,82 +402,132 @@ MODELOS CHEVROLET
 //-------------------------------------------------------
 MODELOS FORD
 
-[
+[   
+    {
+        "name":"E350",
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
+    },
     {
         "name":"ECOSPORT",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2020
     },
     {
         "name":"ECOSPORT AUT",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1999,
+        "max":2020
     },
     {
         "name":"EDGE",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"ESCAPE",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"EXPEDITION XLT",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"EXPLORER",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"EXPLORER EXPEDITION",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"EXPLORER LIMITED",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"EXPLORER SPORT TRAC",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"EXPLORER XLT",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"F-150",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"FIESTA",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"FOCUS",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"FUSION",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"FUSION TURBO",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"LASER",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"NEW ESCAPE TURBO",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"PLATINUM",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"RANGER",
-        "brand":"603ec608a2f72639b577f2c5"
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
+    },
+    {
+        "name":"SPORT TRAC",
+        "brand":"603ec608a2f72639b577f2c5",
+        "min":1995,
+        "max":2019
     }
 ]
 
@@ -488,11 +537,15 @@ MODELOS HONDA
 [
     {
         "name":"CIVIC",
-        "brand":"603ec646a2f72639b577f2c6"
+        "brand":"603ec646a2f72639b577f2c6",
+        "min":1995,
+        "max":2019
     },
     {
         "name":"CR-V",
-        "brand":"603ec646a2f72639b577f2c6"
+        "brand":"603ec646a2f72639b577f2c6",
+        "min":1995,
+        "max":2019
     }
 ]
 

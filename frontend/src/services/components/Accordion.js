@@ -16,7 +16,7 @@ const Accordion = ({
     setYearSelected
 }) => {
 
-    const [selected_1, setSelected_1] = useState(false);
+    const [selected_1, setSelected_1] = useState(true);
     const [selected_2, setSelected_2] = useState(false);
     const [selected_3, setSelected_3] = useState(false);
 

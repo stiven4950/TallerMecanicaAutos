@@ -4,14 +4,13 @@ import React from 'react';
 // Custom packages
 import '../static/css/stepper.css';
 
-const Stepper = ({position, setPosition, step_1, step_2, step_3, step_4}) => {
+const Stepper = ({position, step_1, step_2, step_3, step_4}) => {
 
     return (
         <div id="menuBackground">
             <ul id="menu">
                 <li
-                    className={`${position===0?'active':step_1 & position!==0?'done':''}`}
-                    onClick={()=>setPosition(0)}>
+                    className={`${position===0?'active':step_1 & position!==0?'done':''}`}>
 
                     <div className="numberStep">
                         <i className="fas fa-car"></i>
@@ -22,8 +21,7 @@ const Stepper = ({position, setPosition, step_1, step_2, step_3, step_4}) => {
                 </li>
 
                 <li
-                    className={`${position===1?'active':step_2 & position!==1?'done':''}`}
-                    onClick={()=>setPosition(1)}>
+                    className={`${position===1?'active':step_2 & position!==1?'done':''}`}>
 
                     <div className="numberStep">
                         <i className="fas fa-concierge-bell"></i>
@@ -34,8 +32,7 @@ const Stepper = ({position, setPosition, step_1, step_2, step_3, step_4}) => {
                 </li>
 
                 <li
-                    className={`${position===2?'active':step_3 & position!==2?'done':''}`}
-                    onClick={()=>setPosition(2)}>
+                    className={`${position===2?'active':step_3 & position!==2?'done':''}`}>
 
                     <div className="numberStep">
                         <i className="fas fa-calendar-check"></i>
@@ -46,8 +43,7 @@ const Stepper = ({position, setPosition, step_1, step_2, step_3, step_4}) => {
                 </li>
 
                 <li
-                    className={`${position===3?'active':step_4 & position!==3?'done':''}`}
-                    onClick={()=>setPosition(3)}>
+                    className={`${position===3?'active':step_4 & position!==3?'done':''}`}>
                         
                     <div className="numberStep">
                         <i className="fas fa-id-card-alt"></i>

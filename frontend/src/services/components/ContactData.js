@@ -22,7 +22,7 @@ const ContactData = ({
                         name='user_name'
                         value={user_name}
                         onChange={setFieldsUser}
-
+                        required
                     />
                     <label htmlFor="user_name">Nombre(s)</label>
                 </div>
@@ -34,7 +34,7 @@ const ContactData = ({
                         name='user_lastname'
                         value={user_lastname}
                         onChange={setFieldsUser}
-
+                        required
                     />
                     <label htmlFor="user_lastname">Apellidos</label>
                 </div>
@@ -46,7 +46,7 @@ const ContactData = ({
                         name='user_phone'
                         value={user_phone}
                         onChange={setFieldsUser}
-
+                        required
                     />
                     <label htmlFor="user_phone">Teléfono</label>
                 </div>
@@ -58,7 +58,7 @@ const ContactData = ({
                         name='user_email'
                         value={user_email}
                         onChange={setFieldsUser}
-
+                        required
                     />
                     <label htmlFor="user_email">Correo</label>
                 </div>
@@ -73,7 +73,7 @@ const ContactData = ({
                         name='user_comment'
                         value={user_comment}
                         onChange={setFieldsUser}
-
+                        required
                     />
                     <label htmlFor="user_comment">Comentario Adicional</label>
                 </div>

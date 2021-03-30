@@ -73,15 +73,28 @@ const Appointment = ({date, setDate, time, setTime, setBringCar}) => {
 
             <div className="row">
                 <div className="col-md-10 col-lg-3 mx-auto">
-                    <input type="time"
-                        min="08:00"
-                        max="17:00"
-                        className="rounded-pill datepicker"
-                        onChange={event=>setTime(event.target.value)}
-                        value={time}
-                        required
-                    />
+                    
+
+                <select
+                    className="rounded-pill datepicker mx-2"
+                    name='time'
+                    onChange={event=>setTime(event.target.value)}
+                    value={time} required
+                    >
+                    <option value="">Seleccionar hora</option>
+                    <option value="08:00">08:00 a. m</option>
+                    <option value="09:00">09:00 a. m</option>
+                    <option value="10:00">10:00 a. m</option>
+                    <option value="11:00">11:00 a. m</option>
+                    <option value="12:00">12:00 p. m</option>
+                    <option value="13:00">1:00 p. m</option>
+                    <option value="14:00">2:00 p. m</option>
+                    <option value="15:00">3:00 p. m</option>
+                    <option value="16:00">4:00 p. m</option>
+                    <option value="17:00">5:00 p. m</option>
+                </select>
                 </div>
+
             </div>
         </>
     );

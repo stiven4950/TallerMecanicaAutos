@@ -51,6 +51,10 @@ const microServiceShema = new mongoose.Schema(
         photoDesktop : {
             data: Buffer,
             contentType:String,
+        },
+        icon : {
+            data: Buffer,
+            contentType:String,
         }
     },
     {

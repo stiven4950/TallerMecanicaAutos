@@ -29,7 +29,7 @@ class Cotizar extends Component {
             selectedCarModel: 0,
 
             years: [],
-            selectedYear: [],
+            selectedYear: '',
             position: 0,
 
             step_1: false,
@@ -40,7 +40,14 @@ class Cotizar extends Component {
             service: [],
             microservice: [],
             selectedMicroService: [],
+            
+            /* DATE */
+            date: `${new Date().getFullYear()}-${(new Date().getMonth() + 1) < 10 ? '0' + (new Date().getMonth() + 1) : new Date().getMonth() + 1}-${(new Date().getDate() + 1) < 10 ? '0' + (new Date().getDate()) : new Date().getDate()}`,
+            time: '',
 
+            /* BRINGCAR */
+            bringcar: '',
+            
             /* CONTACT */
             user_name: '',
             user_lastname: '',
@@ -48,12 +55,6 @@ class Cotizar extends Component {
             user_email: '',
             user_comment: '',
 
-            /* DATE */
-            date:`${new Date().getFullYear()}-${(new Date().getMonth()+1)<10?'0'+(new Date().getMonth()+1):new Date().getMonth()+1}-${(new Date().getDate()+1)<10?'0'+(new Date().getDate()):new Date().getDate()}`,
-            time:'',
-
-            /* BRINGCAR */
-            bringcar: '',
         };
 
         this.loadBrands = this.loadBrands.bind(this);
@@ -64,8 +65,7 @@ class Cotizar extends Component {
 
 
         this.setYearSelected = this.setYearSelected.bind(this);
-
-        this.setPosition = this.setPosition.bind(this);
+        
         this.setPositionButton = this.setPositionButton.bind(this);
 
         this.loadService = this.loadService.bind(this);
@@ -78,52 +78,47 @@ class Cotizar extends Component {
         this.setMicroService = this.setMicroService.bind(this);
     }
 
-    setPosition = (position) => {
-        this.setState({
-            position: position,
-        });
-
-        switch (position) {
-            case 0:
-                this.setState({
-                    step_1: true,
-                });
-                break;
-
-            case 1:
-                this.setState({
-                    step_1: true,
-                });
-                break;
-
-            case 2:
-                this.setState({
-                    step_2: true,
-                });
-                break;
-
-            case 3:
-                this.setState({
-                    step_3: true,
-                });
-                break;
-
-            default:
-                break;
-
-        }
-
-    }
-
     setPositionButton = (direction) => {
 
         if (direction === 0) this.setState((state) => ({
             position: state.position - 1
         }));
-        else this.setState((state) => ({
-            position: state.position + 1
-        }));
+        else {
+            switch (this.state.position) {
+                case 0:
+                    if(this.state.selectedBrand.name !== undefined && this.state.selectedCarModel.name !== undefined && this.state.selectedYear!=='')
+                        this.setState((state) => ({
+                            position: state.position + 1
+                        }));
+                    else alert('Rellena todos los campos');
 
+                    break;
+                
+                case 1:
+                    if(this.state.selectedMicroService.length > 0)
+                        this.setState((state) => ({
+                            position: state.position + 1
+                        }));
+                    else alert('Escoge al menos un servicio');
+                    
+                    break;
+                
+
+                case 2:
+                    if(this.state.bringcar !== '' && this.state.time !== '')
+                        this.setState((state) => ({
+                            position: state.position + 1
+                        }));
+                    else alert('Rellena todos los campos');
+                    
+                    break;
+            
+                default:
+                    break;
+            }
+
+            
+        }
         switch (this.state.position) {
             case 0:
                 this.setState({
@@ -257,27 +252,28 @@ class Cotizar extends Component {
         });
     }
 
-    setDate(value){
+    setDate(value) {
         this.setState({
-            date:value
-        });
-    }
-    
-    setTime(value){
-        this.setState({
-            time:value
+            date: value
         });
     }
 
-    setBringCar(value){
+    setTime(value) {
         this.setState({
-            bringcar:value
+            time: value
+        });
+    }
+
+    setBringCar(value) {
+        this.setState({
+            bringcar: value
         });
     }
 
     formReservationSubmit = async (event) => {
         event.preventDefault();
-        
+
+
         await createReservation(
             this.state.selectedBrand.name,
             this.state.selectedCarModel.name,
@@ -291,7 +287,7 @@ class Cotizar extends Component {
             this.state.user_phone,
             this.state.user_email,
             this.state.user_comment,
-        ).then(data=>{
+        ).then(data => {
             alert("Los datos fueron registrados con éxito");
             window.location.href = "/";
         });
@@ -303,7 +299,6 @@ class Cotizar extends Component {
                 <Header />
                 <Stepper
                     position={this.state.position}
-                    setPosition={this.setPosition}
                     step_1={this.state.step_1}
                     step_2={this.state.step_2}
                     step_3={this.state.step_3}
@@ -364,19 +359,19 @@ class Cotizar extends Component {
                                 </div>
 
                                 <Divider attr="main-color my-3" />
-                                
-                                {this.state.position ===3?
+
+                                {this.state.position === 3 ?
                                     <button
                                         type="submit"
                                         className="btn bg-success rounded-pill waves-effect btn-step my-2 text-white">
-                                    Enviar
-                                </button>:<></>}
+                                        Enviar
+                                </button> : <></>}
 
-                                {this.state.position !==3?
+                                {this.state.position !== 3 ?
                                     <button
                                         type="button"
                                         className="btn bg-warning rounded-pill waves-effect btn-step my-2"
-                                        onClick={() => this.setPositionButton(1)}>Siguiente</button>:<></>}
+                                        onClick={() => this.setPositionButton(1)}>Siguiente</button> : <></>}
                                 {this.state.position !== 0 ?
                                     <button
                                         type="button"

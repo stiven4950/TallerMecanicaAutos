@@ -41,7 +41,6 @@
         background-color: var(--main-color);
     }
     #menu li:hover {
-        cursor: pointer;
         background-color: var(--color-s-300);
         box-shadow: none;
     }

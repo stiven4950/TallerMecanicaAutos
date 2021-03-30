@@ -13,17 +13,24 @@ const BitCard = ({ microservice, setMicroService }) => {
     return (
         <div className='d-block m-2 bit-card'>
 
-            <input type="checkbox" style={{'height':'1.5em','width':'1.5em', 'position':'absolute', 'top':'1.8em', 'left':'2.3em'}} checked={selected} name="service" value={microservice._id} onChange={(e)=>{setSelected(!selected); setMicroService();}} />
+            <input
+                type="checkbox"
+                style={{'height':'1.5em','width':'1.5em', 'position':'absolute', 'top':'1.8em', 'left':'2.3em'}}
+                checked={selected}
+                name="service"
+                value={microservice._id}
+                onChange={(e)=>{setSelected(!selected); setMicroService();}}
+            />
 
                 <ShowImage
                     id={microservice._id}
                     name={microservice.title}
                     url='microservice'
                     attr='card-img-top'
-                    option='photoMobile'
+                    option='icon'
                 />
             
-            <p className="text-center py-2" style={{'lineHeight': '14px'}}>{microservice.title}</p>
+            <p className="text-center" style={{'lineHeight': '14px'}}>{microservice.title}</p>
         </div>
     );
 }
