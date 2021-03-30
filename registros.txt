@@ -629,3 +629,15 @@ MODELOS HYUNDAI
         "brand":"603ec665a2f72639b577f2c7"
     }
 ]
+
+// ---------------------------------------------------------------------
+// ---------------------------------------------------------------------
+
+SERVICIOS
+
+-> ESTÉTICA AUTOMOTRIZ
+
+name = ESTÉTICA AUTOMOTRIZ
+description = Latonería/Pintura
+type = embellecimiento
+slug = estetica-automotriz

@@ -1,10 +1,12 @@
+// Predefined Packages
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
 
-import Logo from '../static/img/logo1.png';
+// Custom packages
 import ModalLogin from './ModalLogin';
 import ModalRegister from './ModalRegister';
+import Logo from '../static/img/logo1.png';
 
 
 class Header extends Component {
@@ -33,12 +35,30 @@ class Header extends Component {
         let route = window.location.pathname;
         return (
             <>
-                <Modal isOpen={this.state.isOpenModalLogin} onRequestClose={() => this.closeModalLogin()} className="config-modal" ariaHideApp={false}>
-                    <ModalLogin closeModalLogin={this.closeModalLogin} openOther={this.openModalRegister} />
+                <Modal
+                    isOpen={this.state.isOpenModalLogin}
+                    onRequestClose={() => this.closeModalLogin()}
+                    className="config-modal"
+                    ariaHideApp={false}>
+
+                    <ModalLogin
+                        closeModalLogin={this.closeModalLogin}
+                        openOther={this.openModalRegister}
+                    />
+
                 </Modal>
 
-                <Modal isOpen={this.state.isOpenModalRegister} onRequestClose={() => this.closeModalRegister()} className="config-modal" ariaHideApp={false}>
-                    <ModalRegister closeModalRegister={this.closeModalRegister} openOther={this.openModalLogin} />
+                <Modal
+                    isOpen={this.state.isOpenModalRegister}
+                    onRequestClose={() => this.closeModalRegister()}
+                    className="config-modal"
+                    ariaHideApp={false}>
+
+                    <ModalRegister
+                        closeModalRegister={this.closeModalRegister}
+                        openOther={this.openModalLogin}
+                    />
+
                 </Modal>
 
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -63,10 +83,10 @@ class Header extends Component {
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto">
-                            <li className={`nav-item ${route==='/'?'active':''}`}>
+                            <li className={`nav-item ${route === '/' ? 'active' : ''}`}>
                                 <Link to="/" className="nav-link">Inicio</Link>
                             </li>
-                            <li className={`nav-item ${route==='/quienes'?'active':''}`}>
+                            <li className={`nav-item ${route === '/quienes' ? 'active' : ''}`}>
                                 <Link to="/quienes" className="nav-link">¿Quiénes Somos?</Link>
                             </li>
 
@@ -77,16 +97,19 @@ class Header extends Component {
 
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <div className="dropdown-divider"></div>
-                                    <Link to="/servicio/mecanica-basica" className={`dropdown-item ${route==='/servicio/mecanica-basica'?'active':''}`} >Mecánica básica</Link>
-                                    <Link to="/servicio/mecanica-especializada" className={`dropdown-item ${route==='/servicio/mecanica-especializada'?'active':''}`} >Mecánica especializada</Link>
-                                    <Link to="/servicio/revisiones-automotriz" className={`dropdown-item ${route==='/servicio/revisiones-automotriz'?'active':''}`} >Revisiones automotríz</Link>
-                                    <Link to="/servicio/estetica-automotriz" className={`dropdown-item ${route==='/servicio/estetica-automotriz'?'active':''}`} >Estética automotríz</Link>
+                                    <Link to="/servicio/mecanica-basica" className={`dropdown-item ${route === '/servicio/mecanica-basica' ? 'active' : ''}`} >Mecánica básica</Link>
+                                    <Link to="/servicio/mecanica-especializada" className={`dropdown-item ${route === '/servicio/mecanica-especializada' ? 'active' : ''}`} >Mecánica especializada</Link>
+                                    <Link to="/servicio/revisiones-automotriz" className={`dropdown-item ${route === '/servicio/revisiones-automotriz' ? 'active' : ''}`} >Revisiones automotríz</Link>
+                                    <Link to="/servicio/estetica-automotriz" className={`dropdown-item ${route === '/servicio/estetica-automotriz' ? 'active' : ''}`} >Estética automotríz</Link>
                                 </div>
                             </li>
-                            {route !== '/servicio/cotizar'?
-                            <li className="nav-item vertical-center mx-auto">
-                                <Link to="/servicio/cotizar" className="quote mx-2"> Reservar </Link>
-                            </li>:<></>}
+                            {route !== '/servicio/cotizar'
+                                ?
+                                <li className="nav-item vertical-center mx-auto">
+                                    <Link to="/servicio/cotizar" className="quote mx-2"> Reservar </Link>
+                                </li>
+                                :
+                                <></>}
 
                             <li className="nav-item vertical-center mx-auto">
                                 <Link to="#" className="Blogin mx-2" onClick={() => this.openModalLogin()}> Inicia Sesión </Link>

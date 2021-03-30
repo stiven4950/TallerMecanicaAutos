@@ -1,3 +1,4 @@
+// Predefined Packages
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -79,7 +80,7 @@ class Footer extends Component {
 
         </div>
 
-        <div className="footer-copyright text-center py-3">© 2019 Copyright: REPCAR INC.
+        <div className="footer-copyright text-center py-3">© 2021 Copyright: REPCAR INC.
                 </div>
 
       </footer>

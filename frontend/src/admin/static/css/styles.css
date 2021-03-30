@@ -89,8 +89,11 @@ td img{
   font-weight: 500;
 }
 .demo-layout .demo-navigation .mdl-navigation__link:hover {
-  background-color: #00BCD4;
+  background-color: var(--main-color);
   color: #37474F;
+}
+.active_mdl-navigation {
+  background-color: var(--color-s-200);
 }
 .demo-navigation .mdl-navigation__link .material-icons {
   font-size: 24px;

@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import User from '../static/img/user.jpg';
 
-const NavBarPanel=({configMenu})=>{
+const NavBarPanel=({configMenu, numMenu})=>{
+
+    const href = '#/';
 
     return(
         <>
@@ -51,13 +53,13 @@ const NavBarPanel=({configMenu})=>{
                 </header>
 
                 <nav className="demo-navigation mdl-navigation mdl-color--white">
-                    <a href=";" className="mdl-navigation__link" onClick={()=>configMenu(1)}><i className="mdl-color-text--blue-grey-800 material-icons" role="presentation">home</i>Categorías</a>
-                    <a href=";" className="mdl-navigation__link" onClick={()=>configMenu(2)}><i className="mdl-color-text--blue-grey-800 material-icons" role="presentation">inbox</i>Juegos</a>
-                    <a href=";" className="mdl-navigation__link" onClick={()=>configMenu(3)}><i className="mdl-color-text--blue-grey-800 material-icons" role="presentation">face</i>Perfil</a>
-                    <a href=";" className="mdl-navigation__link" onClick={()=>configMenu(4)}><i className="mdl-color-text--blue-grey-800 material-icons" role="presentation">shopping_cart</i>Purchases</a>
-                    <a href=";" className="mdl-navigation__link" onClick={()=>configMenu(5)}><i className="mdl-color-text--blue-grey-800 material-icons" role="presentation">people</i>Social</a>
+                    <a href={href} className={`mdl-navigation__link ${numMenu===1?'active_mdl-navigation':''}`} onClick={()=>configMenu(1)}><i className="mdl-color-text--blue-grey-800 material-icons" role="presentation">home</i>Carrousel</a>
+                    <a href={href} className={`mdl-navigation__link ${numMenu===2?'active_mdl-navigation':''}`} onClick={()=>configMenu(2)}><i className="mdl-color-text--blue-grey-800 material-icons" role="presentation">inbox</i>Servicios</a>
+                    <a href={href} className={`mdl-navigation__link ${numMenu===3?'active_mdl-navigation':''}`} onClick={()=>configMenu(3)}><i className="mdl-color-text--blue-grey-800 material-icons" role="presentation">face</i>Perfil</a>
+                    <a href={href} className={`mdl-navigation__link ${numMenu===4?'active_mdl-navigation':''}`} onClick={()=>configMenu(4)}><i className="mdl-color-text--blue-grey-800 material-icons" role="presentation">shopping_cart</i>Purchases</a>
+                    <a href={href} className={`mdl-navigation__link ${numMenu===5?'active_mdl-navigation':''}`} onClick={()=>configMenu(5)}><i className="mdl-color-text--blue-grey-800 material-icons" role="presentation">people</i>Social</a>
                     <div className="mdl-layout-spacer"></div>
-                    <a className="mdl-navigation__link" href=";"><i className="mdl-color-text--blue-grey-800 material-icons" role="presentation">help_outline</i><span className="visuallyhidden">Help</span></a>
+                    <a className="mdl-navigation__link" href={href}><i className="mdl-color-text--blue-grey-800 material-icons" role="presentation">help_outline</i><span className="visuallyhidden">Help</span></a>
                 </nav>
             </div>
         </>

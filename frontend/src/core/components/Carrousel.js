@@ -1,6 +1,8 @@
+// Predefined Packages
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+// Custom packges
 import { API } from '../../config';
 
 class Carrousel extends Component {

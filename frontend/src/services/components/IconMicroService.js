@@ -3,30 +3,26 @@ import React, { useEffect, useState } from 'react';
 import BitCard from './BitCard';
 import { getLists } from '../apiCore';
 
-const IconMicroService = ({ service }) => {
+const IconMicroService = ({ service, setMicroService }) => {
 
     const [microservices, setMicroservice] = useState([]);
-    const [, setError] = useState([]);
 
-    const loadMicroService = () => {
+    const loadMicroService = async (id) => {
 
-        getLists('microservice', service._id).then(data => {
-            if (data.error) {
-                setError(data.error);
-            } else {
-                setMicroservice(data);
-            }
-        });
+        setMicroservice( await getLists('microservice', id));
     }
     
     useEffect(() => {
-        loadMicroService();
-    });
+        loadMicroService(service._id);
+    },[ service._id ]);
 
     return (
         <div className="row">
             {microservices.map((microservice, i) => (
-                <BitCard key={microservice._id} microservice={microservice} />
+                <BitCard key={microservice._id}
+                    microservice={microservice}
+                    setMicroService={setMicroService}
+                />
             ))}
         </div>
     );

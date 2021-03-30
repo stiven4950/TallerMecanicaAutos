@@ -44,9 +44,9 @@ class RegisterModal extends Component {
     }
 
     handleSubmit(event) {
-        alert('A email was submitted: ' + this.state.emailController);
-        alert('A password was submitted: ' + this.state.passwordController);
         event.preventDefault();
+    
+        // Perform registration of user data
     }
 
     handleSee() {

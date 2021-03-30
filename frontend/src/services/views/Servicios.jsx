@@ -1,17 +1,18 @@
+// Predefined packages
 import React, { Component } from 'react';
 
-import Header from '../../core/components/Header';
-import Footer from '../../core/components/Footer.js';
+// Custom packages
+import BrandsSection from '../../core/components/BrandsSection';
 import CarrouselServicio from '../components/CarrouselServicio';
+import Divider from '../../core/components/Divider';
+import Domicilio from '../components/Domicilio';
+import Footer from '../../core/components/Footer.js';
+import Header from '../../core/components/Header';
 import MicroService from '../components/MicroService';
 
 import { getService, getLists } from '../apiCore';
-
 import '../../core/static/css/global_theme.css';
 import '../../core/static/css/estilos.css';
-import Divider from '../../core/components/Divider';
-import BrandsSection from '../../core/components/BrandsSection';
-import Domicilio from '../components/Domicilio';
 
 class Servicios extends Component {
 
@@ -20,7 +21,6 @@ class Servicios extends Component {
         this.state = {
             service: [],
             microservice: [],
-            error: [],
         };
 
         this.loadService = this.loadService.bind(this);
@@ -28,38 +28,19 @@ class Servicios extends Component {
     }
 
     loadMicroService = async (idService) => {
-
-        await getLists('microservice', idService).then(data => {
-
-            if (data.error) {
-                this.setState({
-                    error: data.error,
-                });
-            } else {
-                this.setState({
-                    microservice: data,
-                });
-            }
+        this.setState({
+            microservice: await getLists('microservice', idService),
         });
     }
 
     loadService = async () => {
         const { match } = this.props;
 
-        await getService(match.params.slug).then(data => {
-
-            if (data.error) {
-                this.setState({
-                    error: data.error,
-                });
-            } else {
-                this.setState({
-                    service: data[0],
-                });
-            }
+        this.setState({
+            service: (await getService(match.params.slug))[0],
         });
 
-        await this.loadMicroService(this.state.service._id);
+        this.loadMicroService(this.state.service._id);
     }
 
     componentDidMount() {
@@ -72,7 +53,6 @@ class Servicios extends Component {
                 <Header />
                 <CarrouselServicio service={this.state.service} />
                 
-
                 <Domicilio/>
                 
                 <Divider attr={'main-color'}/>

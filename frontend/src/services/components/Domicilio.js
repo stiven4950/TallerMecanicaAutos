@@ -7,7 +7,7 @@ const Domicilio = () => {
 
                 <div className="col-md-8 mx-auto register">
 
-                    <h1 className="text-center mb-3">Mecánica sin salir de casa</h1>
+                    <h2 className="text-center mb-3">Mecánica sin salir de casa</h2>
 
                     <div className="col-10 my-2 mx-auto">
                         

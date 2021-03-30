@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
-const BringCar = ({ icon, name }) => {
+const BringCar = ({ icon, name,  setBringCar }) => {
 
     const [selected, setSelected] = useState(false);
 
     return (
         <div className="row">
-            <div className="col-md-5 col-lg-5 mx-auto card-bring-car color-1" onClick={()=>setSelected(!selected)}>
+            <div className="col-md-5 col-lg-5 mx-auto card-bring-car color-1" onClick={()=>{setBringCar(name); setSelected(!selected)}}>
 
                 {selected ? <div className="select-appointment">
-                    <i className="fas fa-check-circle"></i>
+                    <i className="fas fa-check-circle text-center mt-4 d-block"></i>
                 </div> : <></>}
 
                 <div className="row">

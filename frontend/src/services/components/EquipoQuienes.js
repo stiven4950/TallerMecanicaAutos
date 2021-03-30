@@ -17,7 +17,7 @@ class EquipoQuienes extends Component {
 
                     <div className=" text-center py-4 mb-4 equipo">
                         <div className="container">
-                            <h1 className="font-weight-light text-white">¡Conoce a nuestro equipo!</h1>
+                            <h3 className="font-weight-light text-white">¡Conoce a nuestro equipo!</h3>
                         </div>
                     </div>
 

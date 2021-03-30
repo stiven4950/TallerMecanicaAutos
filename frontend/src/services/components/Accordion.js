@@ -1,5 +1,7 @@
+// Predefined packages
 import React, { useState } from 'react';
 
+// Custom packages
 import ShowImage from './ShowImage';
 
 const Accordion = ({
@@ -64,11 +66,15 @@ const Accordion = ({
 
     return (
         <>
-            <button className={`accordion ${selected_1 ? 'activeA' : ''}`} onClick={() => setPanel(1)}>
+            <button
+                type="button"
+                className={`accordion ${selected_1 ? 'activeA' : ''}`}
+                onClick={() => setPanel(1)}>
+
                 <div className="row">
                     <div className="col-2">
                         Marca
-                            </div>
+                    </div>
                     <div className="col-8">
                         <span className="d-block text-center item-selected">{selectedBrand.name}</span>
                     </div>
@@ -80,11 +86,16 @@ const Accordion = ({
             </button>
 
             <div className={`panel ${selected_1 ? 'd-block h-100' : 'd-none'}`}>
-
                 {brands.map((brand, i) => (
                     <div className="row p-2 brand" key={brand._id} onClick={() => setBrandSelected(brand)}>
                         <div className="col-2">
-                            <ShowImage item={brand} url='brand' option='photo' attr='w-75' />
+                            <ShowImage
+                                id={brand._id}
+                                name={brand.name}
+                                url='brand'
+                                option='photo'
+                                attr='w-75'
+                            />
                         </div>
                         <div className="col-10">
                             <p className="text-center">{brand.name}</p>
@@ -95,11 +106,15 @@ const Accordion = ({
             </div>
 
 
-            <button className={`accordion ${selected_2 ? 'activeA' : ''}`} onClick={() => setPanel(2)}>
+            <button
+                type="button"
+                className={`accordion ${selected_2 ? 'activeA' : ''}`}
+                onClick={() => setPanel(2)}>
+
                 <div className="row">
                     <div className="col-2">
                         Modelo
-                            </div>
+                    </div>
                     <div className="col-8">
                         <span className="d-block text-center item-selected">{selectedCarModel.name}</span>
                     </div>
@@ -122,7 +137,11 @@ const Accordion = ({
 
             </div>
 
-            <button className={`accordion ${selected_3 ? 'activeA' : ''}`} onClick={() => setPanel(3)}>
+            <button
+                type="button"
+                className={`accordion ${selected_3 ? 'activeA' : ''}`}
+                onClick={() => setPanel(3)}>
+                    
                 <div className="row">
                     <div className="col-2">
                         Año

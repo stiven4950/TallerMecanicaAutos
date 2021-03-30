@@ -2,14 +2,12 @@
 import React, {useState, useEffect} from 'react';
 
 // Custom packges
-import {getLists} from '../apiCore';
-
 import Header from '../components/Header';
 import Carrousel from '../components/Carrousel';
-import PorqueRepcar from '../components/PorqueRepcar';
+import Services from '../components/Services';
 import Footer from '../components/Footer';
 import BrandsSection from '../components/BrandsSection';
-
+import {getLists} from '../apiCore';
 import '../static/css/estilos.css';
 
 const Index = () => {
@@ -17,26 +15,12 @@ const Index = () => {
     const [services, setServices] = useState([]);
     const [carrousel, setCarrousel] = useState([]);
 
-    const [, setError] = useState(false);
-
-    const loadServices = ()=>{
-        getLists('service').then(data=>{
-            if (data.error) {
-                setError(data.error);
-            }else{
-                setServices(data);
-            }
-        });
+    const loadServices = async ()=>{
+        setServices(await getLists('service'));
     }
 
-    const loadCarrousel = ()=>{
-        getLists('carrousel').then(data=>{
-            if (data.error) {
-                setError(data.error);
-            }else{
-                setCarrousel(data);
-            }
-        });
+    const loadCarrousel = async ()=>{
+        setCarrousel(await getLists('carrousel'));
     }
 
     useEffect(()=>{
@@ -48,7 +32,7 @@ const Index = () => {
         <>
             <Header/>
             <Carrousel carrousel={carrousel}/>
-            <PorqueRepcar services={services}/>
+            <Services services={services}/>
             <BrandsSection/>
             <Footer />
         </>

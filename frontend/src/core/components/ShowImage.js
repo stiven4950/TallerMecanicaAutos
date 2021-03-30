@@ -1,13 +1,14 @@
+// Predefined Packages
 import React from 'react';
+
+// Custom packges
 import { API } from '../../config';
 
-const ShowImage = ({ item, url, attr }) => {
+const ShowImage = ({ id, name, url, attr }) => {
     return (
-        <>
-            <img src={`${API}/${url}/photo/${item._id}`}
-                alt={item.name} className={attr}
-            />
-        </>
+        <img src={`${API}/${url}/photo/${id}`}
+            alt={name} className={attr}
+        />
     );
 }
 

@@ -1,22 +1,16 @@
+// Predefined Packages
 import React, { useState, useEffect } from 'react';
-import { getLists } from '../apiCore';
 
+// Custom packges
 import CardBrand from './CardBrand';
+import { getLists } from '../apiCore';
 
 const BrandsSection = () => {
 
   const [brands, setBrands] = useState([]);
-  const [, setError] = useState(false);
-
-
-  const loadBrands = () => {
-    getLists('brand').then(data => {
-      if (data.error) {
-        setError(data.error);
-      } else {
-        setBrands(data);
-      }
-    });
+  
+  const loadBrands = async () => {
+    setBrands(await getLists('brand'));
   }
 
   useEffect(() => {
@@ -30,14 +24,21 @@ const BrandsSection = () => {
 
           <div className="row">
             <div className="col-12">
-              <h1 className="h2-cards mb-2">Marcas Que Atendemos</h1>
+              <h2 className="d-block mb-5 text-center">Marcas Que Atendemos</h2>
             </div>
           </div>
 
           <div className="row vertical-center">
+
             {brands.map((brand, i) => (
-              <CardBrand brand={brand} key={i} />
+
+              <CardBrand
+                {...brand}
+                key={i}
+              />
+              
             ))}
+            
           </div>
 
         </div>

@@ -1,10 +1,12 @@
+// Predefined packages
 import React from 'react';
 
-import Header from '../../core/components/Header'
+// Custom packages
+import CarouselQuienes from '../../services/components/CarouselQuienes';
+import DescripcionQuienes from '../../services/components/DescripcionQuienes';
+import EquipoQuienes from '../../services/components/EquipoQuienes';
 import Footer from '../../core/components/Footer';
-import CarouselQuienes from '../../services/components/CarouselQuienes'
-import DescripcionQuienes from '../../services/components/DescripcionQuienes'
-import EquipoQuienes from '../../services/components/EquipoQuienes'
+import Header from '../../core/components/Header';
 
 const Quienes = () => {
   return (

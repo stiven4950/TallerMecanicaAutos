@@ -1,23 +1,29 @@
+// Predefined packages
 import React, {useState} from 'react';
 
+// Custom packages
 import ShowImage from './ShowImage';
-
 import './../static/css/bit_card.css';
 
-const BitCard = ({ microservice }) => {
+
+const BitCard = ({ microservice, setMicroService }) => {
 
     const [selected, setSelected] = useState(false);
     
     return (
-        <div className='d-block m-2 bit-card' onClick={()=>setSelected(!selected)}>
-            {selected?<div className="select">
-                <i className="fas fa-check-circle"></i>
-            </div>:<></>}
-            <div className="fade-in">
-                <ShowImage item={microservice} url='microservice' attr='card-img-top' option='photoMobile' />
-            </div>
+        <div className='d-block m-2 bit-card'>
 
-            <p className="text-center py-2">{microservice.title}</p>
+            <input type="checkbox" style={{'height':'1.5em','width':'1.5em', 'position':'absolute', 'top':'1.8em', 'left':'2.3em'}} checked={selected} name="service" value={microservice._id} onChange={(e)=>{setSelected(!selected); setMicroService();}} />
+
+                <ShowImage
+                    id={microservice._id}
+                    name={microservice.title}
+                    url='microservice'
+                    attr='card-img-top'
+                    option='photoMobile'
+                />
+            
+            <p className="text-center py-2" style={{'lineHeight': '14px'}}>{microservice.title}</p>
         </div>
     );
 }

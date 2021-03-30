@@ -1,10 +1,11 @@
+// Predefined packages
 import React from 'react';
-import Divider from '../../core/components/Divider';
+
+// Custom packages
 import BringCar from './BringCar';
+import Divider from '../../core/components/Divider';
 
-const Appointment = () => {
-
-
+const Appointment = ({date, setDate, time, setTime, setBringCar}) => {
     return (
         <>
             <div className="row">
@@ -22,7 +23,15 @@ const Appointment = () => {
 
             <div className="row">
                 <div className="col-md-10 col-lg-3 mx-auto">
-                    <input type="date" name="datereservation" min="2021-03-17" max="2021-12-28" className="rounded-pill datepicker" required />
+                    <input
+                        type="date"
+                        min={date}
+                        max="2021-12-28"
+                        className="rounded-pill datepicker"
+                        onChange={event=>setDate(event.target.value)}
+                        value={date}
+                        required
+                    />
                 </div>
             </div>
 
@@ -42,9 +51,9 @@ const Appointment = () => {
 
             </div>
 
-            <BringCar icon='fa-place-of-worship' name="Yo llevo mi carro al taller" />
-            <BringCar icon='fa-map-marked-alt' name="Lleven mi carro al taller" />
-            <BringCar icon='fa-home' name="Quiero el servicio en mi casa" />
+            <BringCar icon='fa-place-of-worship' name="Yo llevo mi carro al taller" setBringCar={setBringCar} />
+            <BringCar icon='fa-map-marked-alt' name="Lleven mi carro al taller" setBringCar={setBringCar} />
+            <BringCar icon='fa-home' name="Quiero el servicio en mi casa" setBringCar={setBringCar} />
 
             <Divider attr="main-color my-3" />
 
@@ -64,7 +73,14 @@ const Appointment = () => {
 
             <div className="row">
                 <div className="col-md-10 col-lg-3 mx-auto">
-                    <input type="time" required min="08:00" max="17:00" className="rounded-pill datepicker" />
+                    <input type="time"
+                        min="08:00"
+                        max="17:00"
+                        className="rounded-pill datepicker"
+                        onChange={event=>setTime(event.target.value)}
+                        value={time}
+                        required
+                    />
                 </div>
             </div>
         </>

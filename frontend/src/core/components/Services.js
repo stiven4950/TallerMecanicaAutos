@@ -2,7 +2,7 @@ import React from 'react';
 
 import CardServicio from './CardServicio';
 
-const PorqueRepcar = ({ services }) => {
+const Services = ({ services }) => {
 
   return (
     <section className="py-2 section-card">
@@ -11,13 +11,18 @@ const PorqueRepcar = ({ services }) => {
 
           <div className="row">
             <div className="col-12">
-              <h1 className="h2-cards mb-2">Servicios Que Ofrecemos</h1>
+              <h2 className="d-block mb-2 text-center mb-5">Servicios Que Ofrecemos</h2>
             </div>
           </div>
 
           <div className="row vertical-center">
             {services.map((service, i) => (
-              <CardServicio key={i} service={service} />
+
+              <CardServicio
+                key={i}
+                {...service}
+              />
+              
             ))}
           </div>
 
@@ -27,4 +32,4 @@ const PorqueRepcar = ({ services }) => {
   );
 }
 
-export default PorqueRepcar;
+export default Services;
