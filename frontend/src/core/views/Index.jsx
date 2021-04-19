@@ -15,17 +15,17 @@ const Index = () => {
     const [services, setServices] = useState([]);
     const [carrousel, setCarrousel] = useState([]);
 
-    const loadServices = async ()=>{
-        setServices(await getLists('service'));
+    const loadServices = async (arg)=>{
+        setServices(await getLists(arg));
     }
 
-    const loadCarrousel = async ()=>{
-        setCarrousel(await getLists('carrousel'));
+    const loadCarrousel = async (arg)=>{
+        setCarrousel(await getLists(arg));
     }
 
     useEffect(()=>{
-        loadServices();
-        loadCarrousel();
+        loadServices('service');
+        loadCarrousel('carrousel');
     }, []);
 
     return (

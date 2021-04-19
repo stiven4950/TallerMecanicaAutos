@@ -25,8 +25,8 @@ const CardServicio = ({ _id,name, description, slug }) => {
     }
 
     return (
-        <div className="item col-md-3 col-lg-3">
-            <div className="card">
+        <div className="item col-md-3 col-lg-3 all-card">
+            <div className="card animate__animated animate__swing animate__slower">
                 <div className="fade-in">
                     <ShowImage
                         id={_id}

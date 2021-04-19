@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Divider from '../../core/components/Divider';
 
 const ContactData = ({
@@ -22,6 +24,7 @@ const ContactData = ({
                         name='user_name'
                         value={user_name}
                         onChange={setFieldsUser}
+                        autoComplete='off'
                         required
                     />
                     <label htmlFor="user_name">Nombre(s)</label>
@@ -34,6 +37,7 @@ const ContactData = ({
                         name='user_lastname'
                         value={user_lastname}
                         onChange={setFieldsUser}
+                        autoComplete='off'
                         required
                     />
                     <label htmlFor="user_lastname">Apellidos</label>
@@ -46,6 +50,7 @@ const ContactData = ({
                         name='user_phone'
                         value={user_phone}
                         onChange={setFieldsUser}
+                        autoComplete='off'
                         required
                     />
                     <label htmlFor="user_phone">Teléfono</label>
@@ -58,6 +63,7 @@ const ContactData = ({
                         name='user_email'
                         value={user_email}
                         onChange={setFieldsUser}
+                        autoComplete='off'
                         required
                     />
                     <label htmlFor="user_email">Correo</label>
@@ -73,6 +79,7 @@ const ContactData = ({
                         name='user_comment'
                         value={user_comment}
                         onChange={setFieldsUser}
+                        autoComplete='off'
                         required
                     />
                     <label htmlFor="user_comment">Comentario Adicional</label>
@@ -81,6 +88,15 @@ const ContactData = ({
             </div>
         </div>
     );
+}
+
+ContactData.propTypes = {
+    setFieldsUser: PropTypes.string.isRequired,
+    user_name: PropTypes.string.isRequired,
+    user_lastname: PropTypes.string.isRequired,
+    user_phone: PropTypes.string.isRequired,
+    user_email: PropTypes.string.isRequired,
+    user_comment: PropTypes.string.isRequired
 }
 
 

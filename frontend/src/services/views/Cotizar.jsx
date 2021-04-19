@@ -206,38 +206,10 @@ class Cotizar extends Component {
     componentWillUnmount() {
     }
 
-    setFieldsUser(event) {
-        switch (event.target.name) {
-            case "user_name":
-                this.setState({
-                    user_name: event.target.value,
-                });
-                break;
-
-            case "user_lastname":
-                this.setState({
-                    user_lastname: event.target.value,
-                });
-                break;
-            case "user_phone":
-                this.setState({
-                    user_phone: event.target.value,
-                });
-                break;
-            case "user_email":
-                this.setState({
-                    user_email: event.target.value,
-                });
-                break;
-            case "user_comment":
-                this.setState({
-                    user_comment: event.target.value,
-                });
-                break;
-
-            default:
-                console.warn("Error");
-        }
+    setFieldsUser({target}) {
+        this.setState({
+            [target.name]: target.value,
+        });
     }
 
     setMicroService() {

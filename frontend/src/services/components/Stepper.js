@@ -10,7 +10,7 @@ const Stepper = ({position, step_1, step_2, step_3, step_4}) => {
         <div id="menuBackground">
             <ul id="menu">
                 <li
-                    className={`${position===0?'active':step_1 & position!==0?'done':''}`}>
+                    className={`${position===0?'active animate__animated animate__bounce animate__slow':step_1 & position!==0?'done':''}`}>
 
                     <div className="numberStep">
                         <i className="fas fa-car"></i>
@@ -21,7 +21,7 @@ const Stepper = ({position, step_1, step_2, step_3, step_4}) => {
                 </li>
 
                 <li
-                    className={`${position===1?'active':step_2 & position!==1?'done':''}`}>
+                    className={`${position===1?'active animate__animated animate__bounce animate__slow':step_2 & position!==1?'done':''}`}>
 
                     <div className="numberStep">
                         <i className="fas fa-concierge-bell"></i>
@@ -32,7 +32,7 @@ const Stepper = ({position, step_1, step_2, step_3, step_4}) => {
                 </li>
 
                 <li
-                    className={`${position===2?'active':step_3 & position!==2?'done':''}`}>
+                    className={`${position===2?'active animate__animated animate__bounce animate__slow':step_3 & position!==2?'done':''}`}>
 
                     <div className="numberStep">
                         <i className="fas fa-calendar-check"></i>
@@ -43,7 +43,7 @@ const Stepper = ({position, step_1, step_2, step_3, step_4}) => {
                 </li>
 
                 <li
-                    className={`${position===3?'active':step_4 & position!==3?'done':''}`}>
+                    className={`${position===3?'active animate__animated animate__bounce animate__slow':step_4 & position!==3?'done':''}`}>
                         
                     <div className="numberStep">
                         <i className="fas fa-id-card-alt"></i>

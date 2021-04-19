@@ -8,8 +8,8 @@ class ModalLogin extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      emailController: '',
-      passwordController: '',
+      email: '',
+      password: '',
       see: false,
     };
 
@@ -18,23 +18,10 @@ class ModalLogin extends Component {
     this.handleSee = this.handleSee.bind(this);
   }
 
-  handleChange(event) {
-    switch (event.target.name) {
-      case "emailInput":
-        this.setState({
-          emailController: event.target.value,
-        });
-        break;
-
-      case "passwordInput":
-        this.setState({
-          passwordController: event.target.value,
-        });
-        break;
-      default:
-        console.warn("Error");
-    }
-
+  handleChange({target}) {
+    this.setState({
+      [target.name]: target.value,
+    });
   }
 
   handleSubmit(event) {
@@ -97,10 +84,11 @@ class ModalLogin extends Component {
                       </div>
                       <div className="col">
                         <input type="email"
-                          name="emailInput"
-                          value={this.state.emailController}
+                          name="email"
+                          value={this.state.email}
                           onChange={this.handleChange}
                           placeholder="Correo electrónico"
+                          autoComplete='off'
                           required />
                       </div>
                     </div>
@@ -114,9 +102,10 @@ class ModalLogin extends Component {
                       <div className="col">
                         <input type={!this.state.see ? "password" : "text"}
                           onChange={this.handleChange}
-                          name="passwordInput"
-                          value={this.state.passwordController}
+                          name="password"
+                          value={this.state.password}
                           placeholder="Contraseña"
+                          autoComplete='off'
                           required />
                       </div>
                       <div className="col-2 vertical-center">

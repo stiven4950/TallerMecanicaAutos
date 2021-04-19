@@ -112,7 +112,7 @@ class Header extends Component {
                                 <></>}
 
                             <li className="nav-item vertical-center mx-auto">
-                                <Link to="#" className="Blogin mx-2" onClick={() => this.openModalLogin()}> Inicia Sesión </Link>
+                                <Link to="#" className="Blogin mx-2 animate__animated animate__swing" onClick={() => this.openModalLogin()}> Inicia Sesión </Link>
                             </li>
 
                         </ul>
