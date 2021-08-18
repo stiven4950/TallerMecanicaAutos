@@ -15,6 +15,10 @@ const microServiceShema = new mongoose.Schema(
             require: true,
             maxlength: 500,
         },
+        cost: {
+            type: Number,
+            require: true,
+        },
         slug: {
             type: String,
             require: true,

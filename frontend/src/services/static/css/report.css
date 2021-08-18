@@ -1,0 +1,13 @@
+.border-report {
+    border: 10px solid var(--main-color);
+    border-radius: 10px;
+    display: block;
+}
+.report-header h5{
+    text-align: center;
+}
+.report-header, .report-footer {
+    background-color: #B0BEC5;
+    color: white;
+    text-align: center;
+}

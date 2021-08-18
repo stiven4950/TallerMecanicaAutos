@@ -1,5 +1,5 @@
 // Predefined packages
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Custom packages
 import BrandsSection from '../../core/components/BrandsSection';
@@ -9,64 +9,53 @@ import Domicilio from '../components/Domicilio';
 import Footer from '../../core/components/Footer.js';
 import Header from '../../core/components/Header';
 import MicroService from '../components/MicroService';
-
+// helpers
 import { getService, getLists } from '../apiCore';
+// styles
 import '../../core/static/css/global_theme.css';
 import '../../core/static/css/estilos.css';
 
-class Servicios extends Component {
+const Servicios = (props) => {
+    const { match } = props;
+    const slug = match.params.slug;
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            service: [],
-            microservice: [],
-        };
+    const [service, setService] = useState([]);
+    const [microservices, setMicroservices] = useState([]);
 
-        this.loadService = this.loadService.bind(this);
-        this.loadMicroService = this.loadMicroService.bind(this);
+
+
+    const loadMicroService = async (id) => {
+        setMicroservices(await getLists('microservice', id));
     }
 
-    loadMicroService = async (idService) => {
-        this.setState({
-            microservice: await getLists('microservice', idService),
-        });
-    }
 
-    loadService = async () => {
-        const { match } = this.props;
+    useEffect(() => {
+        const loadService = async () => {
+            const service = (await getService(slug))[0];
+            setService(service);
+            loadMicroService(service._id);
+        }
+        loadService();
+    }, [slug]);
 
-        this.setState({
-            service: (await getService(match.params.slug))[0],
-        });
+    return (
+        <>
+            <Header />
+            <CarrouselServicio service={service} />
 
-        this.loadMicroService(this.state.service._id);
-    }
+            <Domicilio />
 
-    componentDidMount() {
-        this.loadService();
-    }
+            <Divider attr={'main-color'} />
+            <Divider attr={'secondary-color'} />
+            <Divider attr={'main-color'} />
 
-    render() {
-        return (
-            <>
-                <Header />
-                <CarrouselServicio service={this.state.service} />
-                
-                <Domicilio/>
-                
-                <Divider attr={'main-color'}/>
-                <Divider attr={'secondary-color'}/>
-                <Divider attr={'main-color'}/>
+            <MicroService microservices={microservices} />
 
-                <MicroService microservices={this.state.microservice} />
-                
-                <BrandsSection/>
+            <BrandsSection />
 
-                <Footer />
-            </>
-        );
-    }
+            <Footer />
+        </>
+    );
 }
 
 export default Servicios;

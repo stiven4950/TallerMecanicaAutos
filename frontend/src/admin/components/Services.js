@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import TableService from './TableService';
 
-const Services = ({
+const Services = React.memo(({
     appear,
     setAppearFormS,
     formCreateServiceSubmit,
@@ -21,7 +21,7 @@ const Services = ({
         <main className="mdl-layout__content mdl-color--grey-100">
             <div className="mdl-grid demo-content">
 
-                <div className={`container-fluid ${!appear ? 'd-block' : 'd-none'}`}>
+                <div className={`container-fluid animate__animated animate__swing ${!appear ? 'd-block' : 'd-none'}`}>
                     <div className="row">
                         <div className="col-6 mx-auto" onClick={() => setAppearFormS(true)}>
                             <div className="row insertion">
@@ -169,7 +169,7 @@ const Services = ({
 
         </main>
     )
-}
+});
 
 Services.propTypes = {
     appear: PropTypes.bool.isRequired,

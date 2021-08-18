@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-const BringCar = ({ icon, name,  setBringCar }) => {
+const BringCar = React.memo(({ icon, name,  setBringCar }) => {
+    console.log('Me abrí');
 
     const [selected, setSelected] = useState(false);
 
@@ -23,19 +24,7 @@ const BringCar = ({ icon, name,  setBringCar }) => {
             </div>
         </div>
     );
-}
+});
 
 
 export default BringCar;
-
-
-/*
-    icon: fa-place-of-worship
-    name: Yo llevo mi carro al taller
-
-    icon: fa-map-marked-alt
-    name: Lleven mi carro al taller
-
-    icon: fa-home
-    name: Quiero el servicio en mi casa
-*/

@@ -1,5 +1,5 @@
 // Predefined packages
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Custom packages
 import Accordion from '../components/Accordion';
@@ -11,137 +11,107 @@ import Header from '../../core/components/Header';
 import IconMicroService from '../components/IconMicroService';
 import Stepper from '../components/Stepper';
 
+// helpers
 import { getLists } from '../../core/apiCore';
 import { createReservation, getLists as getCarsModel } from '../apiCore';
+// styles
 import '../../core/static/css/global_theme.css';
 import '../../core/static/css/estilos.css';
 import '../../core/static/css/accordion.css';
+// custom hooks
+import { useForm } from '../../hook/useForm';
+import FinalReport from '../components/FinalReport';
 
-class Cotizar extends Component {
+const Cotizar = () => {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            brands: [],
-            selectedBrand: [],
+    const [brands, setBrands] = useState([]);
+    const [selectedBrand, setSelectedBrand] = useState([]);
+    const [carModel, setCarModel] = useState([]);
+    const [selectedCarModel, setSelectedCarModel] = useState({});
+    const [years, setYears] = useState([]);
+    const [selectedYear, setSelectedYear] = useState('');
+    const [position, setPosition] = useState(0);
 
-            carModel: [],
-            selectedCarModel: 0,
+    const [step_1, setStep_1] = useState(false);
+    const [step_2, setStep_2] = useState(false);
+    const [step_3, setStep_3] = useState(false);
+    const [step_4, setStep_4] = useState(false);
 
-            years: [],
-            selectedYear: '',
-            position: 0,
+    const [service, setService] = useState([]);
+    //const [microservice, setMicroservice] = useState([]);
+    const [selectedMicroservice, setSelectedMicroservice] = useState([]);
 
-            step_1: false,
-            step_2: false,
-            step_3: false,
-            step_4: false,
+    /* DATE */
+    const [date, setDate] = useState(`${new Date().getFullYear()}-${(new Date().getMonth() + 1) < 10 ? '0' + (new Date().getMonth() + 1) : new Date().getMonth() + 1}-${(new Date().getDate() + 1) < 10 ? '0' + (new Date().getDate()) : new Date().getDate()}`);
+    const [time, setTime] = useState('');
 
-            service: [],
-            microservice: [],
-            selectedMicroService: [],
-            
-            /* DATE */
-            date: `${new Date().getFullYear()}-${(new Date().getMonth() + 1) < 10 ? '0' + (new Date().getMonth() + 1) : new Date().getMonth() + 1}-${(new Date().getDate() + 1) < 10 ? '0' + (new Date().getDate()) : new Date().getDate()}`,
-            time: '',
+    /* BRINGCAR */
+    const [bringcar, setBringcar] = useState('');
 
-            /* BRINGCAR */
-            bringcar: '',
-            
-            /* CONTACT */
-            user_name: '',
-            user_lastname: '',
-            user_phone: '',
-            user_email: '',
-            user_comment: '',
+    /* CONTACT */
+    const [values, handleInputChange] = useForm({
+        user_name: '',
+        user_lastname: '',
+        user_phone: '',
+        user_email: '',
+        user_comment: '',
+    });
 
-        };
+    const { user_name,
+        user_lastname,
+        user_phone,
+        user_email,
+        user_comment
+    } = values;
 
-        this.loadBrands = this.loadBrands.bind(this);
-        this.setBrandSelected = this.setBrandSelected.bind(this);
+    const setPositionButton = (direction) => {
 
-        this.loadCarModels = this.loadCarModels.bind(this);
-        this.setCarModelSelected = this.setCarModelSelected.bind(this);
-
-
-        this.setYearSelected = this.setYearSelected.bind(this);
-        
-        this.setPositionButton = this.setPositionButton.bind(this);
-
-        this.loadService = this.loadService.bind(this);
-
-        this.setFieldsUser = this.setFieldsUser.bind(this);
-        this.setDate = this.setDate.bind(this);
-        this.setTime = this.setTime.bind(this);
-        this.setBringCar = this.setBringCar.bind(this);
-        this.formReservationSubmit = this.formReservationSubmit.bind(this);
-        this.setMicroService = this.setMicroService.bind(this);
-    }
-
-    setPositionButton = (direction) => {
-
-        if (direction === 0) this.setState((state) => ({
-            position: state.position - 1
-        }));
+        if (direction === 0) setPosition(p => p - 1);
         else {
-            switch (this.state.position) {
+            switch (position) {
                 case 0:
-                    if(this.state.selectedBrand.name !== undefined && this.state.selectedCarModel.name !== undefined && this.state.selectedYear!=='')
-                        this.setState((state) => ({
-                            position: state.position + 1
-                        }));
+                    if (selectedBrand.name !== undefined && selectedCarModel.name !== undefined && selectedYear !== '')
+                        setPosition(p => p + 1);
                     else alert('Rellena todos los campos');
 
                     break;
-                
+
                 case 1:
-                    if(this.state.selectedMicroService.length > 0)
-                        this.setState((state) => ({
-                            position: state.position + 1
-                        }));
+                    if (selectedMicroservice.length > 0)
+                        setPosition(p => p + 1);
                     else alert('Escoge al menos un servicio');
-                    
+
                     break;
-                
+
 
                 case 2:
-                    if(this.state.bringcar !== '' && this.state.time !== '')
-                        this.setState((state) => ({
-                            position: state.position + 1
-                        }));
+                    if (bringcar !== '' && time !== '')
+                        setPosition(p => p + 1);
                     else alert('Rellena todos los campos');
-                    
+
                     break;
-            
+
                 default:
                     break;
             }
 
-            
+
         }
-        switch (this.state.position) {
+        switch (position) {
             case 0:
-                this.setState({
-                    step_1: true,
-                });
+                setStep_1(true);
                 break;
 
             case 1:
-                this.setState({
-                    step_2: true,
-                });
+                setStep_2(true);
                 break;
 
             case 2:
-                this.setState({
-                    step_3: true,
-                });
+                setStep_3(true);
                 break;
 
             case 3:
-                this.setState({
-                    step_3: true,
-                });
+                setStep_4(true);
                 break;
 
             default:
@@ -150,217 +120,174 @@ class Cotizar extends Component {
         }
     }
 
-    loadService = async () => {
-
-        this.setState({
-            service: await getLists('service'),
-        });
+    const loadService = async () => {
+        setService(await getLists('service'));
     }
 
-    setBrandSelected = (brand) => {
-        this.setState({
-            selectedBrand: brand,
-        });
-
-        this.loadCarModels(brand._id);
+    const setBrandSelected = (brand) => {
+        setSelectedBrand(brand);
+        loadCarModels(brand._id);
     }
 
-    setCarModelSelected = (model) => {
-        this.setState({
-            selectedCarModel: model,
-        });
-
+    const setCarModelSelected = (model) => {
+        setSelectedCarModel(model);
         let data = []
         for (let i = model.min; i <= model.max; i++) {
             data.push(i);
         }
 
-        this.setState({
-            years: data,
-        });
+        setYears(data);
     }
 
-    setYearSelected = (year) => {
-        this.setState({
-            selectedYear: year,
-        });
+    const setYearSelected = (year) => {
+        setSelectedYear(year);
     }
 
-    loadBrands = async () => {
-        this.setState({
-            brands: await getLists('brand'),
-        });
+    const loadBrands = async () => {
+        setBrands(await getLists('brand'));
     }
 
-    loadCarModels = async (idBrand) => {
-        this.setState({
-            carModel: await getCarsModel('carmodel', idBrand),
-        });
+    const loadCarModels = async (idBrand) => {
+        setCarModel(await getCarsModel('carmodel', idBrand));
     }
 
-    componentDidMount() {
-        this.loadBrands();
-        this.loadService();
-    }
+    useEffect(() => {
+        loadBrands();
+        loadService();
+    }, []);
 
-    componentWillUnmount() {
-    }
-
-    setFieldsUser({target}) {
-        this.setState({
-            [target.name]: target.value,
-        });
-    }
-
-    setMicroService() {
+    const setMicroService = () => {
         let data = []
         let elements = document.getElementsByName('service');
         elements.forEach(element => {
             if (element.checked) data.push(element.value);
         });
 
-        this.setState({
-            selectedMicroService: data
-        });
+        setSelectedMicroservice(data);
     }
 
-    setDate(value) {
-        this.setState({
-            date: value
-        });
-    }
-
-    setTime(value) {
-        this.setState({
-            time: value
-        });
-    }
-
-    setBringCar(value) {
-        this.setState({
-            bringcar: value
-        });
-    }
-
-    formReservationSubmit = async (event) => {
+    const formReservationSubmit = async (event) => {
         event.preventDefault();
 
 
         await createReservation(
-            this.state.selectedBrand.name,
-            this.state.selectedCarModel.name,
-            this.state.selectedYear,
-            this.state.selectedMicroService,
-            this.state.date,
-            this.state.time,
-            this.state.bringcar,
-            this.state.user_name,
-            this.state.user_lastname,
-            this.state.user_phone,
-            this.state.user_email,
-            this.state.user_comment,
+            selectedBrand.name,
+            selectedCarModel.name,
+            selectedYear,
+            selectedMicroservice,
+            date,
+            time,
+            bringcar,
+            user_name,
+            user_lastname,
+            user_phone,
+            user_email,
+            user_comment,
         ).then(data => {
             alert("Los datos fueron registrados con éxito");
             window.location.href = "/";
         });
     }
+    return (
+        <>
+            <Header />
+            <Stepper
+                position={position}
+                step_1={step_1}
+                step_2={step_2}
+                step_3={step_3}
+                step_4={step_4}
+            />
 
-    render() {
-        return (
-            <>
-                <Header />
-                <Stepper
-                    position={this.state.position}
-                    step_1={this.state.step_1}
-                    step_2={this.state.step_2}
-                    step_3={this.state.step_3}
-                    step_4={this.state.step_4}
-                />
+            <div className="row">
+                <div className="col-8 mx-auto">
+                    <div className="register">
 
-                <div className="row">
-                    <div className="col-8 mx-auto">
-                        <div className="register">
+                        <form onSubmit={formReservationSubmit}>
 
-                            <form onSubmit={this.formReservationSubmit}>
+                            <div className={position === 0 ? 'd-block' : 'd-none'}>
+                                <Accordion
+                                    brands={brands}
+                                    setBrand={setBrandSelected}
+                                    selectedBrand={selectedBrand}
+                                    carModels={carModel}
+                                    setCarModel={setCarModelSelected}
+                                    selectedCarModel={selectedCarModel}
+                                    years={years}
+                                    selectedYear={selectedYear}
+                                    setYearSelected={setYearSelected}
+                                />
+                            </div>
 
-                                <div className={this.state.position === 0 ? 'd-block' : 'd-none'}>
-                                    <Accordion
-                                        brands={this.state.brands}
-                                        setBrand={this.setBrandSelected}
-                                        selectedBrand={this.state.selectedBrand}
-                                        carModels={this.state.carModel}
-                                        setCarModel={this.setCarModelSelected}
-                                        selectedCarModel={this.state.selectedCarModel}
-                                        years={this.state.years}
-                                        selectedYear={this.state.selectedYear}
-                                        setYearSelected={this.setYearSelected}
-                                    />
-                                </div>
+                            <div className={position === 1 ? 'd-block' : 'd-none'}>
+                                {service.map((item, i) => (
+                                    <div key={item._id}>
+                                        <h5 className="mt-2">{item.name}</h5>
+                                        <IconMicroService
+                                            service={item}
+                                            setMicroService={setMicroService}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
 
-                                <div className={this.state.position === 1 ? 'd-block' : 'd-none'}>
-                                    {this.state.service.map((item, i) => (
-                                        <div key={item._id}>
-                                            <h5 className="mt-2">{item.name}</h5>
-                                            <IconMicroService
-                                                service={item}
-                                                setMicroService={this.setMicroService}
-                                            />
-                                        </div>
-                                    ))}
-                                </div>
+                            <div className={position === 2 ? 'd-block' : 'd-none'}>
+                                <Appointment
+                                    date={date}
+                                    setDate={setDate}
+                                    time={time}
+                                    setTime={setTime}
+                                    setBringCar={setBringcar}
+                                />
+                            </div>
 
-                                <div className={this.state.position === 2 ? 'd-block' : 'd-none'}>
-                                    <Appointment
-                                        date={this.state.date}
-                                        setDate={this.setDate}
-                                        time={this.state.time}
-                                        setTime={this.setTime}
-                                        setBringCar={this.setBringCar}
-                                    />
-                                </div>
+                            <div className={position === 3 ? 'd-block' : 'd-none'}>
+                                <ContactData
+                                    handleInputChange={handleInputChange}
+                                    user_name={user_name}
+                                    user_lastname={user_lastname}
+                                    user_phone={user_phone}
+                                    user_email={user_email}
+                                    user_comment={user_comment}
+                                />
+                                <FinalReport
+                                    car={`${selectedBrand.name} ${selectedCarModel.name} ${selectedYear}`}
+                                    time={time}
+                                    date={date}
+                                    microservices={selectedMicroservice}
+                                />
+                            </div>
 
-                                <div className={this.state.position === 3 ? 'd-block' : 'd-none'}>
-                                    <ContactData
-                                        setFieldsUser={this.setFieldsUser}
-                                        user_name={this.state.user_name}
-                                        user_lastname={this.state.user_lastname}
-                                        user_phone={this.state.user_phone}
-                                        user_email={this.state.user_email}
-                                        user_comment={this.state.user_comment}
-                                    />
-                                </div>
+                            <Divider attr="main-color my-3" />
 
-                                <Divider attr="main-color my-3" />
-
-                                {this.state.position === 3 ?
-                                    <button
-                                        type="submit"
-                                        className="btn bg-success rounded-pill waves-effect btn-step my-2 text-white">
-                                        Enviar
+                            {position === 3 ?
+                                <button
+                                    type="submit"
+                                    className="btn bg-success rounded-pill waves-effect btn-step my-2 text-white">
+                                    Enviar
                                 </button> : <></>}
 
-                                {this.state.position !== 3 ?
-                                    <button
-                                        type="button"
-                                        className="btn bg-warning rounded-pill waves-effect btn-step my-2"
-                                        onClick={() => this.setPositionButton(1)}>Siguiente</button> : <></>}
-                                {this.state.position !== 0 ?
-                                    <button
-                                        type="button"
-                                        className="btn bg-warning rounded-pill waves-effect btn-step my-2"
-                                        onClick={() => this.setPositionButton(0)}>Atrás</button> : <></>}
-                                <br className="mb-2" />
+                            {position !== 3 ?
+                                <button
+                                    type="button"
+                                    className="btn bg-warning rounded-pill waves-effect btn-step my-2"
+                                    onClick={() => setPositionButton(1)}>Siguiente</button> : <></>}
+                            {position !== 0 ?
+                                <button
+                                    type="button"
+                                    className="btn bg-warning rounded-pill waves-effect btn-step my-2"
+                                    onClick={() => setPositionButton(0)}>Atrás</button> : <></>}
+                            <br className="mb-2" />
 
-                            </form>
+                        </form>
 
-                        </div>
                     </div>
                 </div>
+            </div>
 
-                <Footer />
-            </>
-        );
-    }
+            <Footer />
+        </>
+    );
 }
 
 export default Cotizar;

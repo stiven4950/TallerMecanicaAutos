@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import TableCarrousel from './TableCarrousel';
 
-const Carrousel = ({
+const Carrousel = React.memo(({
     appear,
     setAppearFormC,
     formCreateCarrouselSubmit,
@@ -19,7 +19,7 @@ const Carrousel = ({
         <main className="mdl-layout__content mdl-color--grey-100">
             <div className="mdl-grid demo-content">
 
-                <div className={`container-fluid ${!appear ? 'd-block' : 'd-none'}`}>
+                <div className={`container-fluid animate__animated animate__swing ${!appear ? 'd-block' : 'd-none'}`}>
                     <div className="row">
                         <div className="col-6 mx-auto" onClick={() => setAppearFormC(true)}>
                             <div className="row insertion">
@@ -129,7 +129,7 @@ const Carrousel = ({
             </div>
         </main>
     )
-}
+});
 
 Carrousel.propTypes = {
     appear: PropTypes.bool.isRequired,

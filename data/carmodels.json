@@ -1,0 +1,1174 @@
+[{
+  "_id": {
+    "$oid": "60552a5fefa7670844925ef7"
+  },
+  "name": "ALTO",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2000,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.257Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.257Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f01"
+  },
+  "name": "CORSA",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2000,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f02"
+  },
+  "name": "CORSA ACTIVE",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2004,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f03"
+  },
+  "name": "CORSA EVOLUTION",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2003,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.261Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.261Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f04"
+  },
+  "name": "CORSA WIND",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2002,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.261Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.261Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f05"
+  },
+  "name": "CRUZE",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2006,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.261Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.261Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f06"
+  },
+  "name": "CRUZE TURBO",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2017,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.261Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.261Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f07"
+  },
+  "name": "DIVAN",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2008,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.261Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.261Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f08"
+  },
+  "name": "DMAX",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2006,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.261Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.261Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f09"
+  },
+  "name": "EPICA",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2004,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.261Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.261Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f0a"
+  },
+  "name": "ESTEEM",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2000,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.263Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.263Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f0b"
+  },
+  "name": "GRAND VITARA",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2000,
+  "max": 2014,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.263Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.263Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f0c"
+  },
+  "name": "GRAND VITARA LX",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2005,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.263Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.263Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f0d"
+  },
+  "name": "JIMNY",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2000,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.265Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.265Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f0e"
+  },
+  "name": "LUV",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2000,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.266Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.266Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f0f"
+  },
+  "name": "LUV 4x2",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2005,
+  "max": 2005,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.266Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.266Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f10"
+  },
+  "name": "LUV DMAX",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2005,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.266Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.266Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f11"
+  },
+  "name": "LUX DMAX",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2008,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.266Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.266Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f12"
+  },
+  "name": "N200",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2010,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.267Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.267Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f13"
+  },
+  "name": "N300",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2009,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.267Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.267Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f14"
+  },
+  "name": "NPR",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2002,
+  "max": 2002,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.267Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.267Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f15"
+  },
+  "name": "ONIX",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2016,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.267Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.267Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f16"
+  },
+  "name": "OPTRA",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2004,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.267Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.267Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f17"
+  },
+  "name": "RODEO",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2000,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.268Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.268Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f18"
+  },
+  "name": "SAIL",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2012,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.268Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.268Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f19"
+  },
+  "name": "SAIL LT",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2014,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.268Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.268Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f1a"
+  },
+  "name": "SONIC",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2011,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.268Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.268Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f1b"
+  },
+  "name": "SPARK",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2005,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.268Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.268Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f1c"
+  },
+  "name": "SPARK GT",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2011,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.268Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.268Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f1d"
+  },
+  "name": "SPARK LIFE",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2017,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.269Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.269Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f1e"
+  },
+  "name": "SWIFT",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2000,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.269Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.269Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f1f"
+  },
+  "name": "TRACKER",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2011,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.270Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.270Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f20"
+  },
+  "name": "TRAVERSE",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2011,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.270Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.270Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f21"
+  },
+  "name": "TRAVERSE 6V",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2015,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.270Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.270Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f22"
+  },
+  "name": "VITARA",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2000,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.270Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.270Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f23"
+  },
+  "name": "VIVANT",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2007,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.270Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.270Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f24"
+  },
+  "name": "ZAFIRA",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2002,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.270Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.270Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925ef8"
+  },
+  "name": "AVEO",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2006,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.259Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.259Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925efa"
+  },
+  "name": "AVEO FAMILY",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2009,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925ef9"
+  },
+  "name": "AVEO EMOTION",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2007,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.259Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.259Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925efb"
+  },
+  "name": "AVEO GTI",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2007,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925efc"
+  },
+  "name": "BEAT",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2019,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925efd"
+  },
+  "name": "CAPTIVA",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2007,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925efe"
+  },
+  "name": "CAPTIVA SPORT",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2010,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925eff"
+  },
+  "name": "CHEVY",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2005,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60552a5fefa7670844925f00"
+  },
+  "name": "COBALT",
+  "brand": {
+    "$oid": "603ec5eea2f72639b577f2c4"
+  },
+  "min": 2008,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-19T22:49:03.260Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a977"
+  },
+  "name": "EDGE",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.212Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.212Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a976"
+  },
+  "name": "ECOSPORT AUT",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1999,
+  "max": 2020,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.212Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.212Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a974"
+  },
+  "name": "E350",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.212Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.212Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a979"
+  },
+  "name": "EXPEDITION XLT",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a975"
+  },
+  "name": "ECOSPORT",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2020,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.212Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.212Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a978"
+  },
+  "name": "ESCAPE",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.212Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.212Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a97a"
+  },
+  "name": "EXPLORER",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a97b"
+  },
+  "name": "EXPLORER EXPEDITION",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a97c"
+  },
+  "name": "EXPLORER LIMITED",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a97d"
+  },
+  "name": "EXPLORER SPORT TRAC",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a97e"
+  },
+  "name": "EXPLORER XLT",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a97f"
+  },
+  "name": "F-150",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a980"
+  },
+  "name": "FIESTA",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a981"
+  },
+  "name": "FOCUS",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a982"
+  },
+  "name": "FUSION",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a983"
+  },
+  "name": "FUSION TURBO",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a984"
+  },
+  "name": "LASER",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a985"
+  },
+  "name": "NEW ESCAPE TURBO",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a986"
+  },
+  "name": "PLATINUM",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a987"
+  },
+  "name": "RANGER",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6063795214c9cc264075a988"
+  },
+  "name": "SPORT TRAC",
+  "brand": {
+    "$oid": "603ec608a2f72639b577f2c5"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:17:38.213Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60637a2614c9cc264075a989"
+  },
+  "name": "CIVIC",
+  "brand": {
+    "$oid": "603ec646a2f72639b577f2c6"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:21:10.668Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:21:10.668Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60637a2614c9cc264075a98a"
+  },
+  "name": "CR-V",
+  "brand": {
+    "$oid": "603ec646a2f72639b577f2c6"
+  },
+  "min": 1995,
+  "max": 2019,
+  "createdAt": {
+    "$date": "2021-03-30T19:21:10.668Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-30T19:21:10.668Z"
+  },
+  "__v": 0
+}]

@@ -8,12 +8,15 @@ import Services from '../components/Services';
 import Footer from '../components/Footer';
 import BrandsSection from '../components/BrandsSection';
 import {getLists} from '../apiCore';
+
 import '../static/css/estilos.css';
+import CardSwiper from '../components/CardSwiper';
 
 const Index = () => {
     
     const [services, setServices] = useState([]);
     const [carrousel, setCarrousel] = useState([]);
+    const [blogs, setBlogs] = useState([]);
 
     const loadServices = async (arg)=>{
         setServices(await getLists(arg));
@@ -23,9 +26,14 @@ const Index = () => {
         setCarrousel(await getLists(arg));
     }
 
+    const loadBlogs = async (arg)=>{
+        setBlogs(await getLists(arg));
+    }
+
     useEffect(()=>{
         loadServices('service');
         loadCarrousel('carrousel');
+        loadBlogs('blog');
     }, []);
 
     return (
@@ -33,6 +41,9 @@ const Index = () => {
             <Header/>
             <Carrousel carrousel={carrousel}/>
             <Services services={services}/>
+
+            <CardSwiper blogs ={blogs}/>
+
             <BrandsSection/>
             <Footer />
         </>

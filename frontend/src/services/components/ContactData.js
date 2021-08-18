@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import Divider from '../../core/components/Divider';
 
-const ContactData = ({
-    setFieldsUser,
+const ContactData = React.memo(({
+    handleInputChange,
     user_name,
     user_lastname,
     user_phone,
@@ -23,7 +23,7 @@ const ContactData = ({
                         id="user_name"
                         name='user_name'
                         value={user_name}
-                        onChange={setFieldsUser}
+                        onChange={handleInputChange}
                         autoComplete='off'
                         required
                     />
@@ -36,7 +36,7 @@ const ContactData = ({
                         id="user_lastname"
                         name='user_lastname'
                         value={user_lastname}
-                        onChange={setFieldsUser}
+                        onChange={handleInputChange}
                         autoComplete='off'
                         required
                     />
@@ -49,7 +49,7 @@ const ContactData = ({
                         id="user_phone"
                         name='user_phone'
                         value={user_phone}
-                        onChange={setFieldsUser}
+                        onChange={handleInputChange}
                         autoComplete='off'
                         required
                     />
@@ -62,7 +62,7 @@ const ContactData = ({
                         id="user_email"
                         name='user_email'
                         value={user_email}
-                        onChange={setFieldsUser}
+                        onChange={handleInputChange}
                         autoComplete='off'
                         required
                     />
@@ -78,7 +78,7 @@ const ContactData = ({
                         id="user_comment"
                         name='user_comment'
                         value={user_comment}
-                        onChange={setFieldsUser}
+                        onChange={handleInputChange}
                         autoComplete='off'
                         required
                     />
@@ -88,10 +88,10 @@ const ContactData = ({
             </div>
         </div>
     );
-}
+});
 
 ContactData.propTypes = {
-    setFieldsUser: PropTypes.string.isRequired,
+    handleInputChange: PropTypes.func.isRequired,
     user_name: PropTypes.string.isRequired,
     user_lastname: PropTypes.string.isRequired,
     user_phone: PropTypes.string.isRequired,

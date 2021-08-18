@@ -70,19 +70,19 @@ exports.list = (req, res) => {
         });
 }
 
-/*exports.findById = (req, res) => {
+exports.findById = (req, res) => {
 
-    Service.findById(req.params.serviceId)
-        .exec((err, service) => {
+    MicroService.findById(req.params.microServiceId)
+        .exec((err, microservice) => {
             if (err) {
                 return res.status(400).json({
                     error: 'Servicio no encontrado'
                 });
             }
 
-            res.json(service);
+            res.json(microservice);
         });
-}*/
+}
 
 exports.findName = (req, res) => {
 

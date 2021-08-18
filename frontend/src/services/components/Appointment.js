@@ -5,7 +5,7 @@ import React from 'react';
 import BringCar from './BringCar';
 import Divider from '../../core/components/Divider';
 
-const Appointment = ({date, setDate, time, setTime, setBringCar}) => {
+const Appointment = React.memo(({date, setDate, time, setTime, setBringCar}) => {
     return (
         <>
             <div className="row">
@@ -98,7 +98,7 @@ const Appointment = ({date, setDate, time, setTime, setBringCar}) => {
             </div>
         </>
     );
-}
+});
 
 
 export default Appointment;

@@ -24,7 +24,7 @@ const BrandsSection = () => {
 
           <div className="row">
             <div className="col-12">
-              <h2 className="d-block mb-5 text-center">Marcas Que Atendemos</h2>
+              <h2 className="d-block mb-5 main-title">Marcas Que Atendemos</h2>
             </div>
           </div>
 

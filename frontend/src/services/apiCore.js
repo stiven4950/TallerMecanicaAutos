@@ -55,7 +55,19 @@ export const createReservation = (
         body: data
     }
     ).then(response => {
-        console.log(response);
+        return response.json();
+    }).catch(err => console.log);
+}
+
+export const getById = (id)=>{
+    return fetch(
+        `${API}/microservice/id/${id}`, {
+        method: "GET",
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }
+    ).then(response => {
         return response.json();
     }).catch(err => console.log);
 }
