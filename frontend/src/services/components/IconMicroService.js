@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import BitCard from './BitCard';
 import { getLists } from '../apiCore';
 
-const IconMicroService = ({ service, setMicroService }) => {
+const IconMicroService = React.memo(({ service, setMicroService }) => {
 
     const [microservices, setMicroservice] = useState([]);
 
@@ -26,6 +26,6 @@ const IconMicroService = ({ service, setMicroService }) => {
             ))}
         </div>
     );
-}
+})
 
 export default IconMicroService;

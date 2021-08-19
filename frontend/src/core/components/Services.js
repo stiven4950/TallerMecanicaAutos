@@ -11,7 +11,7 @@ const Services = ({ services }) => {
 
           <div className="row">
             <div className="col-12">
-              <h2 className="d-block mb-2 text-center mb-5">Servicios Que Ofrecemos</h2>
+              <h2 className="d-block mb-4 main-title">Servicios Que Ofrecemos</h2>
             </div>
           </div>
 

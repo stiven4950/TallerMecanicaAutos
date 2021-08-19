@@ -35,7 +35,7 @@ const TableCarrousel = ({ carrousels, deleteC }) => {
                         <td style={{ 'height': '100%' }}>
                             <button
                                 onClick={() => deleteC(carrousel._id)}
-                                className="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mt-4">
+                                className="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mt-4 animate__animated animate__bounce">
 
                                 <i className="material-icons">delete</i>
                             </button>

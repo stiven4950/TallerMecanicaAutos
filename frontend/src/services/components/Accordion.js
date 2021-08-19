@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 // Custom packages
 import ShowImage from './ShowImage';
 
-const Accordion = ({
+const Accordion = React.memo(({
     brands,
     setBrand,
     selectedBrand,
@@ -170,6 +170,6 @@ const Accordion = ({
 
         </>
     );
-}
+});
 
 export default Accordion;

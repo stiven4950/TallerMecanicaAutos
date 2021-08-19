@@ -5,9 +5,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Oswald', sans-serif;
-}
 
 /* MODIFICAR EL NOMBRE DE LA PAGINA */
 h1{
@@ -16,7 +13,6 @@ h1{
     margin-left: 20px;
     margin-top: 0px;
     margin-top: 10px;
-    font-family: 'Oswald', sans-serif;
     
 }
 

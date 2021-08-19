@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
-const {list, create, remove, findName, photoMobile, photoDesktop, microServiceId, icon} = require('../controllers/MicroServiceController');
+const {list, create, remove, findName, findById, photoMobile, photoDesktop, microServiceId, icon} = require('../controllers/MicroServiceController');
 
 router.get('/list/', list);
 router.post('/create/', create);
 router.delete('/:microServiceId', remove);
 
-/*router.get('/:serviceId', findById);*/
+router.get('/id/:microServiceId', findById);
 router.get('/:serviceName', findName);
 
 /* MULTIMEDIA */

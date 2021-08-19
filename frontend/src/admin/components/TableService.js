@@ -40,7 +40,9 @@ const TableService = ({ services, deleteS }) => {
                             />
                         </td>
                         <td style={{ 'height': '100%' }}>
-                            <button onClick={() => deleteS(service._id)} className="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mt-4">
+                            <button
+                                onClick={() => deleteS(service._id)}
+                                className="mdl-button mdl-js-button mdl-button--icon mdl-button--colored mt-4 animate__animated animate__bounce">
                                 <i className="material-icons">delete</i>
                             </button>
                         </td>

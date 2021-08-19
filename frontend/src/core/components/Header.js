@@ -1,6 +1,6 @@
 // Predefined Packages
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Modal from 'react-modal';
 
 // Custom packages
@@ -97,10 +97,10 @@ class Header extends Component {
 
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <div className="dropdown-divider"></div>
-                                    <Link to="/servicio/mecanica-basica" className={`dropdown-item ${route === '/servicio/mecanica-basica' ? 'active' : ''}`} >Mecánica básica</Link>
-                                    <Link to="/servicio/mecanica-especializada" className={`dropdown-item ${route === '/servicio/mecanica-especializada' ? 'active' : ''}`} >Mecánica especializada</Link>
-                                    <Link to="/servicio/revisiones-automotriz" className={`dropdown-item ${route === '/servicio/revisiones-automotriz' ? 'active' : ''}`} >Revisiones automotríz</Link>
-                                    <Link to="/servicio/estetica-automotriz" className={`dropdown-item ${route === '/servicio/estetica-automotriz' ? 'active' : ''}`} >Estética automotríz</Link>
+                                    <NavLink activeClassName="active" to="/servicio/mecanica-basica" className="dropdown-item">Mecánica básica</NavLink>
+                                    <NavLink activeClassName="active" to="/servicio/revisiones-automotriz" className="dropdown-item">Revisiones automotríz</NavLink>
+                                    <NavLink activeClassName="active" to="/servicio/mecanica-especializada" className="dropdown-item">Mecánica especializada</NavLink>
+                                    <NavLink activeClassName="active" to="/servicio/estetica-automotriz" className="dropdown-item">Estética automotríz</NavLink>
                                 </div>
                             </li>
                             {route !== '/servicio/cotizar'
