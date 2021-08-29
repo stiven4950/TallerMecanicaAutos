@@ -11,3 +11,9 @@
     color: white;
     text-align: center;
 }
+
+/* Paypal */
+
+.perform-pay {
+    color: #B0BEC5 !important;
+}

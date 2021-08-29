@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../static/css/report.css';
 import DetailMicroservice from './DetailMicroservice';
 
-const FinalReport = ({date, time, car, microservices}) => {
-
-    const [total, setTotal] = useState(0);
+const FinalReport = ({date, time, car, microservices, total, setTotal}) => {
 
     return (
         <div className="row">
@@ -36,7 +34,8 @@ const FinalReport = ({date, time, car, microservices}) => {
                     
                     
                         {
-                            microservices.map(microservice=><DetailMicroservice 
+                            microservices.map((microservice,i)=><DetailMicroservice 
+                                key={i+"13"}
                                 microservice={microservice}
                                 setTotal={setTotal}
                             />)
@@ -45,11 +44,11 @@ const FinalReport = ({date, time, car, microservices}) => {
                 </div>
                 {/* footer */}
                 <div className="row report-footer mt-3">
-                    <div className="col">
+                    <div className="col-5">
                         <h5><i className="fas fa-dollar-sign"></i> Total:</h5>
                     </div>
-                    <div className="col">
-                        <h5>{total}</h5>
+                    <div className="col-7">
+                        <h5>{total} USD</h5>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,8 @@ exports.create = (req, res) => {
     const user = new UserM(req.body);
     user.save((err, data) => {
         if (err) return res.status(400).json({
-            error: errorHandler(err)
+            error: errorHandler(err),
+            reason:'Posiblemente el usuario ya está creado'
         });
 
         res.json(data);
@@ -13,13 +14,25 @@ exports.create = (req, res) => {
 
 }
 
-exports.list = (req, res) => {
-    UserM.find().exec((err, data) => {
+exports.editUser = (req, res) => {
 
-        if (err) return res.status(400).json({
-            error: errorHandler(err)
+    const filter = {email:req.body.email}
+    const update = req.body;
+
+    UserM.updateOne(filter, update).then(raw=>console.log);
+    
+    res.json({'success':true});
+}
+
+exports.byEmail = (req, res) => {
+    UserM.find({'email':req.params.byEmail})
+        .exec((err, data) => {
+            if (err) {
+                return res.status(400).json({
+                    error: 'Perfil no encontrado'
+                });
+            }
+
+            res.json(data);
         });
-
-        res.json(data);
-    });
 }

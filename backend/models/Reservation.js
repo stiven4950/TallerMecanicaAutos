@@ -56,7 +56,7 @@ const reservationSchema = new mongoose.Schema(
         phone: {
             type: String,
             require: true,
-            maxlength: 10,
+            maxlength: 14,
             unique: false
         },
         email: {

@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "612808030ba23b113c95d4f7"
+  },
+  "name": "Omar Stiven",
+  "lastname": "Rivera Rocha",
+  "phone": "3212969458",
+  "email": "omarrocha4950@gmail.com",
+  "createdAt": {
+    "$date": "2021-08-26T21:30:43.788Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-27T00:18:42.731Z"
+  },
+  "__v": 0,
+  "address": "Pitalito"
+}]

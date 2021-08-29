@@ -2,29 +2,21 @@ const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema(
     {
-        firstName : {
+        name : {
             type : String,
-            require : true,
             maxlength : 100,
-            unique : false
+            default:''
         },
-        lastName : {
+        lastname : {
             type : String,
-            require : true,
             maxlength : 100,
-            unique : false
-        },
-        personalIdentification: {
-            type : String,
-            require : true,
-            maxlength : 20,
-            unique : true
+            default:''
         },
         phone : {
             type : String,
-            require : true,
             maxlength : 20,
-            unique : true
+            unique : true,
+            default:''
         },
         email : {
             type : String,
@@ -32,21 +24,14 @@ const userSchema = new mongoose.Schema(
             maxlength : 100,
             unique : true
         },
-        password : {
+        address : {
             type : String,
-            require : true,
-            maxlength : 500,
-            unique : false
-        },
-        birthday : {
-            type : String,
-            require : true,
-            maxlength : 20,
-            unique : false
+            maxlength : 100,
+            default:''
         },
     },
 
     { timestamps : true }
 );
 
-module.exports = mongoose.model('UserM', userSchema);
+module.exports = mongoose.model('User', userSchema);

@@ -19,10 +19,10 @@ const DetailMicroservice = ({ microservice, setTotal }) => {
         <div className="col-12 mx-4">
             <div className="row">
             
-                <div className="col-8">
+                <div className="col-7">
                     <i className="d-bloc"> - {micro.title}</i>
                 </div>
-                <div className="col-4">{micro.cost}</div>
+                <div className="col-5">{micro.cost} USD</div>
             </div>
         </div>
     );

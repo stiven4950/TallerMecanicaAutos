@@ -21,6 +21,7 @@ import '../../core/static/css/accordion.css';
 // custom hooks
 import { useForm } from '../../hook/useForm';
 import FinalReport from '../components/FinalReport';
+import { Paypal } from '../components/Paypal';
 
 const Cotizar = () => {
 
@@ -47,6 +48,12 @@ const Cotizar = () => {
 
     /* BRINGCAR */
     const [bringcar, setBringcar] = useState('');
+
+    /* CHECKOUT */
+    const [total, setTotal] = useState(0);
+    const [activeCheckout, setActiveCheckout] = useState(false);
+    const [successPay, setSuccessPay] = useState(false);
+    const [ordeId, setOrdeId] = useState('');
 
     /* CONTACT */
     const [values, handleInputChange] = useForm({
@@ -184,8 +191,7 @@ const Cotizar = () => {
             user_email,
             user_comment,
         ).then(data => {
-            alert("Los datos fueron registrados con éxito");
-            window.location.href = "/";
+            setActiveCheckout(true);
         });
     }
     return (
@@ -255,28 +261,65 @@ const Cotizar = () => {
                                     time={time}
                                     date={date}
                                     microservices={selectedMicroservice}
+                                    total={total}
+                                    setTotal={setTotal}
                                 />
+                                {activeCheckout
+                                    &&
+                                    <Paypal
+                                        total={total}
+                                        setSuccessPay={setSuccessPay}
+                                        setOrderId={setOrdeId}
+                                    />
+                                }
+                                {successPay
+                                && <>
+                                        <Divider attr="main-color my-3" />
+                                        <div className="row m-3 animate__animated animate__bounceInRight">
+                                            <div className="col-12 mx-auto">
+                                                <h4 className="perform-pay">
+                                                    ¡Pago realizado exitosamente!
+                                                    <i className="fas fa-smile-wink icon ml-1"></i>
+                                                </h4>
+                                            </div>
+                                            <div className="col-12 mx-auto">
+                                                <h6 className="text-center">ID Factura: <b> {ordeId}</b>, se ha enviado al correo que has proporcionado</h6>
+                                            </div>
+                                        </div>
+                                    </>
+                                }
                             </div>
 
                             <Divider attr="main-color my-3" />
 
-                            {position === 3 ?
+                            {position === 3 && !activeCheckout ?
                                 <button
                                     type="submit"
                                     className="btn bg-success rounded-pill waves-effect btn-step my-2 text-white">
                                     Enviar
-                                </button> : <></>}
+                                </button>
+                                : <></>}
 
-                            {position !== 3 ?
+                            {position !== 3 && !activeCheckout ?
                                 <button
                                     type="button"
                                     className="btn bg-warning rounded-pill waves-effect btn-step my-2"
                                     onClick={() => setPositionButton(1)}>Siguiente</button> : <></>}
-                            {position !== 0 ?
+                            {position !== 0 && !activeCheckout ?
                                 <button
                                     type="button"
                                     className="btn bg-warning rounded-pill waves-effect btn-step my-2"
                                     onClick={() => setPositionButton(0)}>Atrás</button> : <></>}
+
+                            {successPay
+                                &&
+                                <button
+                                    type="button"
+                                    onClick={() => { window.location.href = "/"; }}
+                                    className="btn bg-success rounded-pill waves-effect btn-step my-2 text-white animate__animated animate__heartBeat animate__infinite">
+                                    Terminar
+                                </button>
+                            }
                             <br className="mb-2" />
 
                         </form>

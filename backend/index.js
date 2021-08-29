@@ -34,6 +34,8 @@ app.use("/api/carmodel", require("./routes/carModelRoute"));
 app.use("/api/reservation", require("./routes/reservationRoute"));
 // ----
 app.use("/api/blog", require("./routes/blogRoute"));
+// ----
+app.use("/api/user", require("./routes/userRoute"));
 
 // Routes
 app.get('/', (req, res) => {

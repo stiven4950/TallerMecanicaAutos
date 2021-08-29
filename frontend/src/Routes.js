@@ -13,6 +13,7 @@ import Quienes from './services/views/Quienes';
 import Servicios from './services/views/Servicios';
 import Cotizar from './services/views/Cotizar';
 import Panel from './admin/views/Panel';
+import Profile from './userdata/views/Profile';
 
 const Routes = () => {
     return (
@@ -24,6 +25,9 @@ const Routes = () => {
                 <Route exact path="/servicio/cotizar" component={Cotizar} />
                 <Route exact path="/admin" component={Panel} />
                 <Route exact path="/servicio/:slug" component={Servicios} />
+                
+                <Route exact path="/profile" component={Profile} />
+
                 <Redirect to="/404" />
             </Switch>
         </Router>
