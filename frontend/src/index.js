@@ -7,13 +7,8 @@ import Routes from './Routes';
 
 ReactDOM.render(
 
-<Auth0Provider
-  domain="taller-mecanica.us.auth0.com"
-  clientId="n0ryhtuBK88nMfqlyKgvvGI2QJw7aucz"
-  redirectUri={window.location.origin}
->
+
   <Routes />
-</Auth0Provider>
   ,
   document.getElementById('root')
 );
