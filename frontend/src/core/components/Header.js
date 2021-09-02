@@ -53,6 +53,7 @@ const Header = () => {
                             <NavLink activeClassName="active" to="/servicio/revisiones-automotriz" className="dropdown-item">Revisiones automotríz</NavLink>
                             <NavLink activeClassName="active" to="/servicio/mecanica-especializada" className="dropdown-item">Mecánica especializada</NavLink>
                             <NavLink activeClassName="active" to="/servicio/estetica-automotriz" className="dropdown-item">Estética automotríz</NavLink>
+                            <NavLink activeClassName="active" to="/admin" className="dropdown-item">Administrador</NavLink>
                         </div>
                     </li>
 
