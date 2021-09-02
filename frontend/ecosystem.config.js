@@ -2,7 +2,7 @@ module.exports = {
     apps : [
         {
           name: "tallerMecanica",
-          script: "./<path to>/server.js",
+          script: "./src/index.js",
           watch: true,
           env: {
               "PORT": 8080,//you can choose
